@@ -1,0 +1,252 @@
+\section{Kinetika a dynamika nulového reaktoru}
+
+\textbf{Kinetika reaktoru} = zkoumá časové chování reaktoru na změnu vstupních parametrů.\\
+
+\textbf{Vstupní parametry} = chápeme primárně $k_{\text{ef}}$, resp. $\rho$ a lze je ovlivnit změnou materiálů či geometrie systému.\\
+
+\textbf{Výstupní parametry} = to, co v systému měříme ($P(t)$, $\Phi (\textbf{r}, t) $ atd.).\\
+
+\textbf{Nulový reaktor} = neboli reaktor nulového výkonu; reaktor pracující v takovém výkonovém rozsahu, že jsou jeho zpětné vazby (ZV) zanedbatelné.
+
+\begin{itemize}
+  \item Výzkumné a energetické reaktory sem řadit nelze, jelikož se ZV projevují.
+  \item Často složité odlišit, u některých nulových reaktorů lze pozorovat ZV (ve vyšších energetických hladinách) a naopak některé energetické reaktory lze provozovat bez ZV (při minimálním provozním výkonu).
+\end{itemize}
+
+\textbf{Zpětná vazba} = proces, díky kterému se změna výstupních parametrů ($P$, $\Phi$) může podílet na změnu výstupních parametrů.\\
+
+\textbf{Dynamika reaktoru} = to samé co kinetika, pouze už zvažuje zapojení ZV.
+
+\subsection{Rovnice kinetiky reaktoru}
+
+= Rovnice popisující závislost změny výstupních parametrů (výsledků) na změně vstupních parametrů.\\
+
+K popisu lze využít transportní rovnici, resp. zjednodušenou difúzní rovnici $\rightarrow$ vede na komplikované soustavy, které nelze v obecném případě řešit analyticky (s projevem heterogenity systému).\\
+
+Řešením jsou \textbf{Rovnice bodové kinetiky}, které zanedbávají změnu prostorového rozložení $\rightarrow$ nastane-li změna na vstupních parametrech (zvětší-li se reaktivita), tak změna výstupních parametrů (např. $\Phi$) se ve všech místech změní stějnou měrou $\rightarrow$ výstupní parametry se tedy pouze škálují a průběh zůstává zachován.\\
+
+\textbf{Rovnice jednobodové kinetiky} = kromě prostorové závislosti se zanedbává i energetické rozdělení $\rightarrow$ vede na 1G rovnice.\\
+
+V reálu to tak není, ale kupodivu dávají rovnice přijatelné výsledky.
+
+\subsubsection{Odvození rovnice jednobodové kinetiky}
+
+Pro odvození se vychází z 1G difúzní rovnice (s konstantním $D$ a $\Sigma_a$):
+
+\begin{equation}
+  \dfrac{\partial n(\textbf{r}, t)}{\partial t} = D \Delta \Phi (\textbf{r}, t) - \Sigma_a \Phi (\textbf{r}, t) + Q (\textbf{r}, t),
+  \label{difuzka}
+\end{equation}
+
+kde:
+
+\begin{itemize}
+  \item $n$ (1/cm$^3$) značí hustotu neutronů,
+  \item $D$ (cm) značí difúzní koeficient,
+  \item $\Phi$ (1/cm$^2$s) značí hustotu toku neutronů,
+  \item $\Sigma_a$ (1/cm) značí makroskopický účinný průřez pro absorbci a
+  \item $Q$ ((1/cm$^3$s) značí zdroj neutronů.
+\end{itemize}
+
+\textbf{a) Odvození bez vlivu zpožděných neutronů}\\
+
+Uvažuji zjednodušení tvaru:
+
+$$ Q (\textbf{r}, t) = k_\infty \Sigma_a \Phi (\textbf{r}, t), $$
+
+$$ L^2 = \dfrac{D}{\Sigma_a}, $$
+
+$$ B_m^2 = \dfrac{k_\infty - 1}{L^2}, $$
+
+$$ n(\textbf{r}, t) = \dfrac{\Phi (\textbf{r}, t)}{v}$$
+
+kde:
+
+\begin{itemize}
+  \item $k_\infty$ (-) značí koeficient násobenní pro nekonečný systém,
+  \item $L^2$ (cm) značí difúzní délku (po umocnění difúzní plochu),
+  \item $B_m$ (1/cm) značí materiálový faktor a
+  \item $v$ (cm/s) značí rychlost neutronů (je konstantní, jelikož máme 1G přiblížení)
+\end{itemize}
+
+a předpokládáme, že rovnici \eqref{difuzka} lze řešit metodou separace proměnných, tedy:
+
+$$ \Phi (\textbf{r}, t) = \Psi (\textbf{r}) \cdot T(t). $$
+
+Poté rovnice \eqref{difuzka} vede na rovnici:
+
+\begin{equation}
+  v D \left ( \dfrac{\Delta \Psi (\textbf{r})}{\Psi (\textbf{r})} + B_m^2 \right ) = \dfrac{1}{T(t)} \dfrac{d T(t)}{d t} = \text{konst.} = - \omega,
+  \label{difuzka_v_separaci}
+\end{equation}
+
+tedy na 2 obyčejné diferenciální rovnice provázané konstantou $\omega$.\\
+
+Rovnice s $\Psi (\textbf{r})$ vede po uvažování okrajových podmínek (extrapolované rozhraní, konečnost, spojitost apod.) na vlastní funkce, jejichž tvar závisí na použité geometrii a tvaru Laplaciánu (kombinace goniometrických, Besselových, hyperbolických apod.). Řešení vyplývá z jednoduché vlnové rovnice:
+
+$$ \Delta \Psi (\textbf{r}) + B_n^2 \Psi (\textbf{r}) = 0, $$
+
+kde vztah mezi \textbf{vlastními čísly} $B_n$ a \textbf{materiálovým faktorem} $B_m$ je svázán pomocí určené konstanty $\omega$ jako:
+
+$$ \omega_n = vD \cdot (B_n^2-B_m^2). $$
+
+Obecně lze výsledek zapsat tvarem:
+
+$$ \Psi (\textbf{r}) = \sum_n A_n \Psi_n (\textbf{r}), $$
+
+kde $A_n$ značí normalizační konstantu a zjistíme ji z výkonu reaktoru.\\
+
+Rovnice s $T(t)$ vede na exponenciálu tvaru:
+
+$$ T(t) = C e^{- \omega t}. $$
+
+Jelikož je ovšem $\omega$ závislá na volbě vlastních čísel, tak i zde platí superpozice a celkovou hustotu toku neutronů $\Phi (\textbf{r}, t)$ spočteme přes sumu všech vlastních funkcí jako:
+
+\begin{equation}
+  \Phi (\textbf{r}, t) = \sum_n A_n \Psi_n (\textbf{r}) e^{- \omega_n t}.
+  \label{difuzka_reseni}
+\end{equation}
+
+Tabulka \ref{table_vlastni_funkce} udává vlastní čísla a vlastní funkce pro různé geometrie reaktoru (viz ZAF2).
+
+\begin{table}[h]
+\centering
+\caption{Vlastní čísla a vlastní funkce pro různé geometrie.}
+\label{table_vlastni_funkce}
+\begin{tabular}{@{}rcc@{}}
+\toprule
+\textbf{Geometrie}   & $B_n$ (1/cm)         & $\Psi_n$ (-)                               \\ \midrule
+\textbf{Nek. deska}  & $n \left ( \dfrac{\pi}{a} \right )$   & $\cos(B_nx)$              \\ [15pt]
+\textbf{Nek. válec}  & $n \left ( \dfrac{2,405}{R} \right )$ & $J_0(B_nr)$               \\ [15pt]
+\textbf{Koule}       & $n \left ( \dfrac{\pi}{R} \right )$   & $\dfrac{\sin(B_nr)}{r}$   \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Jelikož vlastní čísla splňují bilanci $B_1 < B_2 < B_3 < ...$, platí to samé i pro $\omega_1 < \omega_2 < \omega_3 < ...$ a první vlastní číslo po chvíli převáží ta zbylá. Proto dále zavádíme \textbf{geometrický faktor} $B_g$ jako první nejmenší vlastní číslo, tedy $B_g = B_1$.\\
+
+Pro stacionární systém navíc platí $\omega = 0$ a poté $B_m = B_g$ (viz ZAF2).\\
+
+Nyní přejdeme k prostorové nezávislosti (což je vlastně smysl celé kapitoly :D). Lze uvažovat (za předpokladu převážení prvního členu v rovnici \eqref{difuzka_reseni}), že:
+
+$$ \Phi (\textbf{r}, t) \doteq v n(t) \Psi_1 (\textbf{r}) $$
+
+a hustota neutronů $n(t)$ je zároveň úměrná maximální hustotě toku v soustavě (předpoklad rovnice jednobodové kinetiky), tedy:
+
+$$ n(t) \doteq \text{konst.} \cdot \Phi_{max} (t). $$
+
+Po dosazení do rovnice \eqref{difuzka} získáme novou rovnici tvaru:
+
+\begin{equation}
+  v D \left ( \dfrac{\Delta \Psi_1 (\textbf{r})}{\Psi_1 (\textbf{r})} + B_m^2 \right ) = \dfrac{1}{n(t)} \dfrac{d n(t)}{d t} = \text{konst.} = - \omega_1,
+  \label{rovnice_kinetiky_v_separaci}
+\end{equation}
+
+která opět vede na 2 obyčejné diferenciální rovnice provázané konstantou $\omega_1$. Nyní už ovšem nejde o superpozici, jelikož uvažujeme pouze první člen (ačkoliv nestacionaritu zachováváme).\\
+
+Pro zopakování a osvěžení paměti, stále platí:
+
+$$ B_g = B_1, $$
+
+$$ \omega_1 = vD \cdot (B_g^2 - B_m^2). $$
+
+Zavedeme novou veličinu $l$ (s) jako \textbf{střední dobu života neutronů} vztahem:
+
+\begin{equation}
+  l = \dfrac{1}{v \Sigma_a} \dfrac{1}{1+L^2B_g^2}
+  \label{stredni_doba_zivota}
+\end{equation}
+
+a připomeneme si 1G rovnici pro stacionární reaktor:
+
+$$ k_{\text{ef}} = \dfrac{k_{\infty}}{1 + L^2 B_g^2}. $$
+
+Z těchto dvou vztahů lze vyjádřit parametr $\omega_1$ (důkaz dosazením) jako:
+
+$$ \omega_1 = -\dfrac{k_{\text{ef}} - 1}{l}, $$
+
+Což lze dosadit do rovnice \eqref{rovnice_kinetiky_v_separaci} (část s $\Psi$ už nemusím řešit) a získáváme \textbf{Rovnici jednobodové kinetiky}:
+
+\begin{equation}
+  \dfrac{dn(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{l} n(t).
+  \label{rovnice_kinetiky_reseni}
+\end{equation}
+
+Tím jsme si odvodili obyčejnou diferenciální rovnici 1. řádu pro hustotu neutronů $n(t)$, kterou lze řešit jednoduše pomocí integračního faktoru/separace proměnných (čímkoliv). Často nás ale více než hustota neutronů zajímá časový vývoj výkonu, tedy $P(t)$. Zde platí jednoduchá úměra:
+
+$$ n(t) \sim P(t) $$
+
+a tedy po přenormování platí:
+
+$$ \dfrac{dP(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{l} P(t). $$
+
+S předpokladem počáteční podmínky $P(0) = P_0$ a úvahy, že $k_{\text{ef}} = \text{konst.}$, poté rovnice jednobodové kinetiky pro výkon dává řešení tvaru:
+
+\begin{equation}
+  P(t) = P_0 \exp \left ( \dfrac{k_{\text{ef}} - 1}{l} t \right ).
+  \label{rovnice_kinetiky_vykon}
+\end{equation}
+
+\textbf{Př. 1:}\\
+
+Rovnice \eqref{rovnice_kinetiky_vykon} udává, jak rychle se mění výkon v systému v závislosti na $k_{\text{ef}}$ a $l$. Zadefinujeme si \textbf{Periodu reaktoru} $T_e$ (s) jako dobu, za kterou se výkon v systému změní e-krát, pomocí vztahu:
+
+\begin{equation}
+  T_e = \dfrac{l}{k_{\text{ef}} - 1}.
+  \label{perioda}
+\end{equation}
+
+Zatímco $k_{\text{ef}}$ lze ovlivnit (geometrie, obohacení, materiály), $l$ je pevně dáno a spjato se systémem\footnote{Teoreticky to lze také ovlivnit, ale asi těžko z rychlého reaktoru uělám lehkovodní, žejo.}. Přehled rozsahů pro různé systémy zobrazuje tabulka \ref{table_stredni_doby_zivota}. Je tedy vidět, že např. rychlý reaktor bude na změny $k_{\text{ef}}$ reagovat mnohem rychleji, než reaktor moderovaný grafitem.
+
+\begin{table}[h]
+\centering
+\caption{Střední doby života pro různé typy reaktorů.}
+\label{table_stredni_doby_zivota}
+\begin{tabular}{@{}rc@{}}
+\toprule
+\textbf{Typ systému} & $l$ (s)              \\ \midrule
+\textbf{FR}          & $10^{-7}$            \\
+\textbf{LWR}         & $10^{-5} - 10^{-4}$  \\
+\textbf{Grafit}      & $10^{-3}$            \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Pokud uvažujeme LWR reaktor ($l = 10^{-5}$), tak pro:
+
+\begin{itemize}
+  \item $k_{\text{ef}} = 1,01$ vychází perioda $T_e = 0,01$~s a za 1~s se změní výkon $2,69 \cdot 10^{43}$x,
+  \item $k_{\text{ef}} = 1,001$ vychází perioda $T_e = 0,1$~s a za 1~s se změní výkon $2,20 \cdot 10^{4}$x,
+  \item $k_{\text{ef}} = 1,0001$ vychází perioda $T_e = 1$~s a za 1~s se změní výkon $2,72$x.
+\end{itemize}
+
+K rovnici \eqref{rovnice_kinetiky_reseni} je možné dojít i jednoduchou úvahou. Jelikož platí úměra mezi $n(t)$ a $N(t)$:
+
+$$ n(t) \sim N(t), $$
+
+lze vycházet právě z počtu neutronů v jedné generaci. Pro přírůstek mezi generacemi totiž platí:
+
+$$ dN = k_{\text{ef}}N - N, $$
+
+což po vydělení časem $dt$ na LS rovnice, resp. dobou života jedné generace $l$ na PS rovnice spěje k tíženému řešení:
+
+$$ \dfrac{dN(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{l} N(t). $$
+
+Dále je možné rovnici \eqref{rovnice_kinetiky_reseni} přepsat pomocí reaktivity $\rho$. K tomu si zavedeme \textbf{střední dobu vzniku neutronů} $\Lambda$ (s) jako:
+
+\begin{equation}
+  \Lambda = \dfrac{l}{k_{\text{ef}}}.
+  \label{stredni_doba_vzniku}
+\end{equation}
+
+Po lehké úpravě a usměrnění rovnice \eqref{rovnice_kinetiky_reseni} a úvaze, že $\Lambda = \text{konst.}$ dostáváme nový výraz pro rovnici jednobodové kinetiky:
+
+\begin{equation}
+  \dfrac{dn(t)}{dt} = \dfrac{\rho (t)}{\Lambda} n(t).
+  \label{rovnice_kinetiky_reaktivita}
+\end{equation}
+
+$\Lambda$ v podstatě vyjadřuje dobu, za kterou se zreprodukuje 1 neutron. Platí tedy:
+
+\begin{itemize}
+  \item $k_{\text{ef}} > 1$ $\rightarrow$ $\Lambda < l$ $\rightarrow$ nadkritický systém a tedy neutrony se zreprodukují rychleji, než je doba jejich života,
+  \item $k_{\text{ef}} < 1$ $\rightarrow$ $\Lambda > 1$ $\rightarrow$ podkritický systém a zreprodukování neutronu trvá déle, než doba jejich života.
+\end{itemize}
