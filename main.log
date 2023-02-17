@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  16 FEB 2023 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  17 FEB 2023 19:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -778,26 +778,27 @@ Package: easytable 2001/05/31v1.1
 \@tab@size@dash=\dimen401
 )
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 19.
- (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_1.aux))
+h' as default language. on input line 20.
+ (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_0.aux)
+(./chapter_1.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
-Package chemgreek Info: Activating mapping `default' on line 19.
+Package chemgreek Info: Activating mapping `default' on line 20.
 
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -828,7 +829,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 19.
+or `english'. on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -868,7 +869,7 @@ or `english'. on input line 19.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 19.
+ on input line 20.
 
 \openout2 = `veličiny.aux'.
 
@@ -879,6 +880,18 @@ your preamble.
 \openout2 = `zkratky.aux'.
 
  (./zkratky.tex) [2
+
+
+
+]
+\openout2 = `chapter_0.aux'.
+
+ (./chapter_0.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+) [3
 
 
 
@@ -925,7 +938,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-[3
+[4
 
 
 
@@ -944,7 +957,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-[4]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
@@ -959,41 +972,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-[5]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]) [7] (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_1.aux)) ) 
+[7]) [8] (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_0.aux)
+(./chapter_1.aux)) ) 
 Here is how much of TeX's memory you used:
- 28715 strings out of 475075
- 755096 string characters out of 5783001
- 1216007 words of memory out of 5000000
- 49679 multiletter control sequences out of 15000+600000
+ 28745 strings out of 475075
+ 755881 string characters out of 5783001
+ 1215007 words of memory out of 5000000
+ 49702 multiletter control sequences out of 15000+600000
  476516 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,103p,718b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/
-texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2
-022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive
-/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-su
-per/sfrm1095.pfb>
-Output written on main.pdf (7 pages, 167387 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
+er-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texli
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (8 pages, 177958 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

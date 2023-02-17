@@ -1,0 +1,38 @@
+\section{Matematický aparát}
+
+\subsection{Laplaceova transformace}
+
+Je potřeba k tomu, abychom byli schopni jednodušeji řešit soustavy diferenciálních rovnic.\\
+
+Pod pojmem \textbf{Laplaceova transformace} (LT) funkce $f(t)$ definované na intervalu $(0,+\infty)$\footnote{V našem přípaěd půjde typicky o časový interval, proto nám nevadí omezit se na kladný půlinterval.} chápeme zobrazení\footnote{Matematici prominou, následující kapitola bude takové znásilňování matematické ideologie.}:
+
+\begin{equation}
+  \mathcal{L}[f(t)](s) \equiv \int_0^\infty f(t) e^{-st} dt,
+  \label{Laplaceovka}
+\end{equation}
+
+kde $s$ značí komplexní proměnnou. Definičním oborem nově vzniklé funkce je obor konvergence definovaného integrálu. Pro usnadnění zápisu budeme Laplaceovu transformaci označovat jako:
+
+$$ \mathcal{L}[f(t)](s) = \tilde{f}(s). $$
+
+Dále si zadefinujeme \textbf{konvoluci} jednorozměrných funkcí $f(t)$ a $g(t)$ jako:
+
+\begin{equation}
+  (f*g)(t) \equiv \int_0^t f(x) g(t-x) dx.
+  \label{Konvoluce}
+\end{equation}
+
+Dále platí následující vztahy\footnote{Jejichž odvození je primitivní a zvládne je i cvičená opice}:
+
+\begin{itemize}
+  \item \textbf{LT je lineární zobrazení}, tj. pro $f(t)$, $g(t)$ z intervalu $(0,+\infty)$ a pro libovolné komplexní číslo $\alpha$ platí: $ \mathcal{L}[f(t) + \alpha \cdot g(t)](s) = \tilde{f}(s) + \alpha \cdot \tilde{g}(s). $
+  \item \textbf{LT exponenciály:} $ \mathcal{L}[A \cdot e^{Bt}](s) = \dfrac{A}{s-B}$, pokud platí $B < s$.
+  \item \textbf{LT konvoluce:} $\mathcal{L}[(f*g)(t)](s) = \tilde{f}(s) \cdot \tilde{g}(s)$.
+  \item \textbf{LT derivace:} $\mathcal{L}[f'(t)](s) = s \tilde{f}(s) - f(0^+)$.\\
+  Lze aplikovat i na vícenásobné derivace: $\mathcal{L}[f''(t)](s) = s^2 \tilde{f}(s) - s f(0^+) - f'(0^+)$, apod.
+  \item \textbf{LT primitivní funkce:} $\mathcal{L} [F(t)] (s) = \dfrac{F(0^+)}{s} + \dfrac{1}{s}\tilde{f}(s)$.\\
+  Bereme-li primitivní funkci jako funkci horní meze, platí: $\mathcal{L} \left [ \int_0^t f(\tau) d\tau \right ] (s) = \dfrac{1}{s}\tilde{f}(s)$.
+  \item \textbf{Speciální limity:}\\
+  a) $\lim_{t \to 0^+} f(t) = \lim_{s \to \infty} s\tilde{f}(s)$,\\
+  b) $\lim_{t \to \infty} f(t) = \lim_{s \to 0^+} s\tilde{f}(s)$.
+\end{itemize}

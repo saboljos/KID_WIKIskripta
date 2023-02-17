@@ -1,8 +1,8 @@
 \section{Kinetika a dynamika nulového reaktoru}
 
-\textbf{Kinetika reaktoru} = zkoumá časové chování reaktoru na změnu vstupních parametrů.\\
+\textbf{Kinetika reaktoru} = zkoumá časové chování reaktoru se změnou vstupních parametrů.\\
 
-\textbf{Vstupní parametry} = chápeme primárně $k_{\text{ef}}$, resp. $\rho$ a lze je ovlivnit změnou materiálů či geometrie systému.\\
+\textbf{Vstupní parametry} = chápeme primárně $k_{\text{ef}}$, resp. $\rho$ a lze je ovlivnit změnou materiálů či geometrií systému.\\
 
 \textbf{Výstupní parametry} = to, co v systému měříme ($P(t)$, $\Phi (\textbf{r}, t) $ atd.).\\
 
@@ -134,7 +134,7 @@ a hustota neutronů $n(t)$ je zároveň úměrná maximální hustotě toku v so
 
 $$ n(t) \doteq \text{konst.} \cdot \Phi_{max} (t). $$
 
-Po dosazení do rovnice \eqref{difuzka} získáme novou rovnici tvaru:
+Po dosazení do rovnice \eqref{difuzka_v_separaci} získáme novou rovnici tvaru:
 
 \begin{equation}
   v D \left ( \dfrac{\Delta \Psi_1 (\textbf{r})}{\Psi_1 (\textbf{r})} + B_m^2 \right ) = \dfrac{1}{n(t)} \dfrac{d n(t)}{d t} = \text{konst.} = - \omega_1,
@@ -188,14 +188,14 @@ S předpokladem počáteční podmínky $P(0) = P_0$ a úvahy, že $k_{\text{ef}
 
 \textbf{Př. 1:}\\
 
-Rovnice \eqref{rovnice_kinetiky_vykon} udává, jak rychle se mění výkon v systému v závislosti na $k_{\text{ef}}$ a $l$. Zadefinujeme si \textbf{Periodu reaktoru} $T_e$ (s) jako dobu, za kterou se výkon v systému změní e-krát, pomocí vztahu:
+Rovnice \eqref{rovnice_kinetiky_vykon} udává, jak rychle se mění výkon v systému v závislosti na $k_{\text{ef}}$ a $l$. Zadefinujeme si \textbf{periodu reaktoru} $T_e$ (s) jako dobu, za kterou se výkon v systému změní e-krát, pomocí vztahu:
 
 \begin{equation}
   T_e = \dfrac{l}{k_{\text{ef}} - 1}.
   \label{perioda}
 \end{equation}
 
-Zatímco $k_{\text{ef}}$ lze ovlivnit (geometrie, obohacení, materiály), $l$ je pevně dáno a spjato se systémem\footnote{Teoreticky to lze také ovlivnit, ale asi těžko z rychlého reaktoru uělám lehkovodní, žejo.}. Přehled rozsahů pro různé systémy zobrazuje tabulka \ref{table_stredni_doby_zivota}. Je tedy vidět, že např. rychlý reaktor bude na změny $k_{\text{ef}}$ reagovat mnohem rychleji, než reaktor moderovaný grafitem.
+Zatímco $k_{\text{ef}}$ lze ovlivnit (geometrie, obohacení, materiály), $l$ je pevně dáno a spjato se systémem\footnote{Teoreticky to lze také ovlivnit, ale asi těžko z rychlého reaktoru uělám lehkovodní, žejo.}. Přehled rozsahů pro různé systémy zobrazuje tabulka \ref{table_stredni_doby_zivota}. Je tedy vidět, že např. rychlý reaktor bude na změny $k_{\text{ef}}$ reagovat mnohem rychleji, než reaktor moderovaný grafitem.\\
 
 \begin{table}[h]
 \centering
@@ -237,7 +237,7 @@ Dále je možné rovnici \eqref{rovnice_kinetiky_reseni} přepsat pomocí reakti
   \label{stredni_doba_vzniku}
 \end{equation}
 
-Po lehké úpravě a usměrnění rovnice \eqref{rovnice_kinetiky_reseni} a úvaze, že $\Lambda = \text{konst.}$ dostáváme nový výraz pro rovnici jednobodové kinetiky:
+Po lehké úpravě, usměrnění rovnice \eqref{rovnice_kinetiky_reseni} a úvaze, že $\Lambda = \text{konst.}$, dostáváme nový výraz pro rovnici jednobodové kinetiky:
 
 \begin{equation}
   \dfrac{dn(t)}{dt} = \dfrac{\rho (t)}{\Lambda} n(t).
