@@ -1,9 +1,8 @@
-\babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Section heading}{5}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Lorem ipsum dolor sit amet, consectetur adipiscing elit.}{5}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Lorem ipsum dolor sit amet, consectetur adipiscing.}{6}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Lorem ipsum dolor sit amet}{6}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Lorem ipsum dolor sit amet, auctor et pulvinar non}{7}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Another section heading}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Lorem ipsum dolor sit amet, consectetur adipiscing elit.}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Lorem ipsum dolor sit amet, consectetur adipiscing}{8}{subsection.2.2}%
+\contentsline {section}{Seznam použitých veličin}{1}{}%
+\contentsline {section}{Seznam použitých zkratek}{2}{}%
+\contentsline {section}{\numberline {0}Matematický aparát}{4}{}%
+\contentsline {subsection}{\numberline {0.1}Laplaceova transformace}{4}{}%
+\contentsline {section}{\numberline {1}Kinetika a dynamika nulového reaktoru}{5}{}%
+\contentsline {subsection}{\numberline {1.1}Rovnice kinetiky reaktoru}{5}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Odvození rovnic jednobodové kinetiky}{5}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Řešení rovnic jednobodové kinetiky}{13}{}%

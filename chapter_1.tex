@@ -2,7 +2,7 @@
 
 \textbf{Kinetika reaktoru} = zkoumá časové chování reaktoru se změnou vstupních parametrů.\\
 
-\textbf{Vstupní parametry} = chápeme primárně $k_{\text{ef}}$, resp. $\rho$ a lze je ovlivnit změnou materiálů či geometrií systému.\\
+\textbf{Vstupní parametry} = chápeme primárně $k_{\text{ef}}$, resp. $\rho$, a lze je ovlivnit změnou materiálů či geometrií systému.\\
 
 \textbf{Výstupní parametry} = to, co v systému měříme ($P(t)$, $\Phi (\textbf{r}, t) $ atd.).\\
 
@@ -13,9 +13,9 @@
   \item Často složité odlišit, u některých nulových reaktorů lze pozorovat ZV (ve vyšších energetických hladinách) a naopak některé energetické reaktory lze provozovat bez ZV (při minimálním provozním výkonu).
 \end{itemize}
 
-\textbf{Zpětná vazba} = proces, díky kterému se změna výstupních parametrů ($P$, $\Phi$) může podílet na změnu výstupních parametrů.\\
+\textbf{Zpětná vazba} = proces, díky kterému se změna výstupních parametrů ($P$, $\Phi$) může podílet na změnu vstupních parametrů.\\
 
-\textbf{Dynamika reaktoru} = to samé co kinetika, pouze už zvažuje zapojení ZV.
+\textbf{Dynamika reaktoru} = to samé co kinetika, pouze už uvažuje zapojení ZV.
 
 \subsection{Rovnice kinetiky reaktoru}
 
@@ -29,13 +29,14 @@ K popisu lze využít transportní rovnici, resp. zjednodušenou difúzní rovni
 
 V reálu to tak není, ale kupodivu dávají rovnice přijatelné výsledky.
 
-\subsubsection{Odvození rovnice jednobodové kinetiky}
+\subsubsection{Odvození rovnic jednobodové kinetiky}
 
 Pro odvození se vychází z 1G difúzní rovnice (s konstantním $D$ a $\Sigma_a$):
 
 \begin{equation}
+  \boxed{
   \dfrac{\partial n(\textbf{r}, t)}{\partial t} = D \Delta \Phi (\textbf{r}, t) - \Sigma_a \Phi (\textbf{r}, t) + Q (\textbf{r}, t),
-  \label{difuzka}
+  \label{difuzka}}
 \end{equation}
 
 kde:
@@ -45,10 +46,10 @@ kde:
   \item $D$ (cm) značí difúzní koeficient,
   \item $\Phi$ (1/cm$^2$s) značí hustotu toku neutronů,
   \item $\Sigma_a$ (1/cm) značí makroskopický účinný průřez pro absorbci a
-  \item $Q$ ((1/cm$^3$s) značí zdroj neutronů.
+  \item $Q$ (1/cm$^3$s) značí zdroj neutronů.
 \end{itemize}
 
-\textbf{a) Odvození bez vlivu zpožděných neutronů}\\
+\textbf{a) Odvození bez vlivu zpožděných neutronů}
 
 Uvažuji zjednodušení tvaru:
 
@@ -64,7 +65,7 @@ kde:
 
 \begin{itemize}
   \item $k_\infty$ (-) značí koeficient násobenní pro nekonečný systém,
-  \item $L^2$ (cm) značí difúzní délku (po umocnění difúzní plochu),
+  \item $L$ (cm) značí difúzní délku (po umocnění difúzní plochu),
   \item $B_m$ (1/cm) značí materiálový faktor a
   \item $v$ (cm/s) značí rychlost neutronů (je konstantní, jelikož máme 1G přiblížení)
 \end{itemize}
@@ -109,7 +110,7 @@ Jelikož je ovšem $\omega$ závislá na volbě vlastních čísel, tak i zde pl
 
 Tabulka \ref{table_vlastni_funkce} udává vlastní čísla a vlastní funkce pro různé geometrie reaktoru (viz ZAF2).
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{Vlastní čísla a vlastní funkce pro různé geometrie.}
 \label{table_vlastni_funkce}
@@ -149,11 +150,12 @@ $$ B_g = B_1, $$
 
 $$ \omega_1 = vD \cdot (B_g^2 - B_m^2). $$
 
-Zavedeme novou veličinu $l$ (s) jako \textbf{střední dobu života neutronů} vztahem:
+Zavedeme novou veličinu $\ell$ (s) jako \textbf{střední dobu života neutronů} vztahem:
 
 \begin{equation}
-  l = \dfrac{1}{v \Sigma_a} \dfrac{1}{1+L^2B_g^2}
-  \label{stredni_doba_zivota}
+  \boxed{
+  \ell \equiv \dfrac{1}{v \Sigma_a} \dfrac{1}{1+L^2B_g^2}
+  \label{stredni_doba_zivota}}
 \end{equation}
 
 a připomeneme si 1G rovnici pro stacionární reaktor:
@@ -162,13 +164,14 @@ $$ k_{\text{ef}} = \dfrac{k_{\infty}}{1 + L^2 B_g^2}. $$
 
 Z těchto dvou vztahů lze vyjádřit parametr $\omega_1$ (důkaz dosazením) jako:
 
-$$ \omega_1 = -\dfrac{k_{\text{ef}} - 1}{l}, $$
+$$ \omega_1 = -\dfrac{k_{\text{ef}} - 1}{\ell}, $$
 
 Což lze dosadit do rovnice \eqref{rovnice_kinetiky_v_separaci} (část s $\Psi$ už nemusím řešit) a získáváme \textbf{Rovnici jednobodové kinetiky}:
 
 \begin{equation}
-  \dfrac{dn(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{l} n(t).
-  \label{rovnice_kinetiky_reseni}
+  \boxed{
+  \dfrac{dn(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{\ell} n(t).
+  \label{rovnice_kinetiky_reseni}}
 \end{equation}
 
 Tím jsme si odvodili obyčejnou diferenciální rovnici 1. řádu pro hustotu neutronů $n(t)$, kterou lze řešit jednoduše pomocí integračního faktoru/separace proměnných (čímkoliv). Často nás ale více než hustota neutronů zajímá časový vývoj výkonu, tedy $P(t)$. Zde platí jednoduchá úměra:
@@ -177,40 +180,41 @@ $$ n(t) \sim P(t) $$
 
 a tedy po přenormování platí:
 
-$$ \dfrac{dP(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{l} P(t). $$
+$$ \dfrac{dP(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{\ell} P(t). $$
 
 S předpokladem počáteční podmínky $P(0) = P_0$ a úvahy, že $k_{\text{ef}} = \text{konst.}$, poté rovnice jednobodové kinetiky pro výkon dává řešení tvaru:
 
 \begin{equation}
-  P(t) = P_0 \exp \left ( \dfrac{k_{\text{ef}} - 1}{l} t \right ).
+  P(t) = P_0 \exp \left ( \dfrac{k_{\text{ef}} - 1}{\ell} t \right ).
   \label{rovnice_kinetiky_vykon}
 \end{equation}
 
-\textbf{Př. 1:}\\
+\textbf{Př. 1:}
 
-Rovnice \eqref{rovnice_kinetiky_vykon} udává, jak rychle se mění výkon v systému v závislosti na $k_{\text{ef}}$ a $l$. Zadefinujeme si \textbf{periodu reaktoru} $T_e$ (s) jako dobu, za kterou se výkon v systému změní e-krát, pomocí vztahu:
+Rovnice \eqref{rovnice_kinetiky_vykon} udává, jak rychle se mění výkon v systému v závislosti na $k_{\text{ef}}$ a $\ell$. Zadefinujeme si \textbf{periodu reaktoru} $T_e$ (s) jako dobu, za kterou se výkon v systému změní e-krát, pomocí vztahu:
 
 \begin{equation}
-  T_e = \dfrac{l}{k_{\text{ef}} - 1}.
-  \label{perioda}
+  \boxed{
+  T_e \equiv \dfrac{\ell}{k_{\text{ef}} - 1}.
+  \label{perioda}}
 \end{equation}
 
-Zatímco $k_{\text{ef}}$ lze ovlivnit (geometrie, obohacení, materiály), $l$ je pevně dáno a spjato se systémem\footnote{Teoreticky to lze také ovlivnit, ale asi těžko z rychlého reaktoru uělám lehkovodní, žejo.}. Přehled rozsahů pro různé systémy zobrazuje tabulka \ref{table_stredni_doby_zivota}. Je tedy vidět, že např. rychlý reaktor bude na změny $k_{\text{ef}}$ reagovat mnohem rychleji, než reaktor moderovaný grafitem.\\
+Zatímco $k_{\text{ef}}$ lze ovlivnit (geometrie, obohacení, materiály), $\ell$ je pevně dáno a spjato se systémem\footnote{Teoreticky to lze také ovlivnit, ale asi těžko z rychlého reaktoru uělám tak jednoduše lehkovodní, žejo.}. Přehled rozsahů pro různé systémy zobrazuje tabulka \ref{table_stredni_doby_zivota}. Je tedy vidět, že např. rychlý reaktor bude na změny $k_{\text{ef}}$ reagovat mnohem rychleji, než reaktor moderovaný grafitem.\\
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{Střední doby života pro různé typy reaktorů.}
 \label{table_stredni_doby_zivota}
 \begin{tabular}{@{}rc@{}}
 \toprule
-\textbf{Typ systému} & $l$ (s)              \\ \midrule
+\textbf{Typ systému} & $\ell$ (s)           \\ \midrule
 \textbf{FR}          & $10^{-7}$            \\
 \textbf{LWR}         & $10^{-5} - 10^{-4}$  \\
 \textbf{Grafit}      & $10^{-3}$            \\ \bottomrule
 \end{tabular}
 \end{table}
 
-Pokud uvažujeme LWR reaktor ($l = 10^{-5}$), tak pro:
+Pokud uvažujeme LWR reaktor ($\ell = 10^{-5}$), tak pro:
 
 \begin{itemize}
   \item $k_{\text{ef}} = 1,01$ vychází perioda $T_e = 0,01$~s a za 1~s se změní výkon $2,69 \cdot 10^{43}$x,
@@ -226,27 +230,325 @@ lze vycházet právě z počtu neutronů v jedné generaci. Pro přírůstek mez
 
 $$ dN = k_{\text{ef}}N - N, $$
 
-což po vydělení časem $dt$ na LS rovnice, resp. dobou života jedné generace $l$ na PS rovnice spěje k tíženému řešení:
+což po vydělení časem $dt$ na LS rovnice, resp. dobou života jedné generace $\ell$ na PS rovnice spěje k tíženému řešení:
 
-$$ \dfrac{dN(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{l} N(t). $$
+$$ \dfrac{dN(t)}{dt} = \dfrac{k_{\text{ef}} - 1}{\ell} N(t). $$
 
 Dále je možné rovnici \eqref{rovnice_kinetiky_reseni} přepsat pomocí reaktivity $\rho$. K tomu si zavedeme \textbf{střední dobu vzniku neutronů} $\Lambda$ (s) jako:
 
 \begin{equation}
-  \Lambda = \dfrac{l}{k_{\text{ef}}}.
-  \label{stredni_doba_vzniku}
+  \boxed{
+  \Lambda \equiv \dfrac{\ell}{k_{\text{ef}}}.
+  \label{stredni_doba_vzniku}}
 \end{equation}
 
 Po lehké úpravě, usměrnění rovnice \eqref{rovnice_kinetiky_reseni} a úvaze, že $\Lambda = \text{konst.}$, dostáváme nový výraz pro rovnici jednobodové kinetiky:
 
 \begin{equation}
+  \boxed{
   \dfrac{dn(t)}{dt} = \dfrac{\rho (t)}{\Lambda} n(t).
-  \label{rovnice_kinetiky_reaktivita}
+  \label{rovnice_kinetiky_reaktivita}}
 \end{equation}
 
 $\Lambda$ v podstatě vyjadřuje dobu, za kterou se zreprodukuje 1 neutron. Platí tedy:
 
 \begin{itemize}
-  \item $k_{\text{ef}} > 1$ $\rightarrow$ $\Lambda < l$ $\rightarrow$ nadkritický systém a tedy neutrony se zreprodukují rychleji, než je doba jejich života,
-  \item $k_{\text{ef}} < 1$ $\rightarrow$ $\Lambda > 1$ $\rightarrow$ podkritický systém a zreprodukování neutronu trvá déle, než doba jejich života.
+  \item $k_{\text{ef}} > 1$ $\rightarrow$ $\Lambda < \ell$ $\rightarrow$ nadkritický systém a tedy neutrony se zreprodukují rychleji, než je doba jejich života,
+  \item $k_{\text{ef}} < 1$ $\rightarrow$ $\Lambda > \ell$ $\rightarrow$ podkritický systém a zreprodukování neutronu trvá déle, než doba jejich života.
 \end{itemize}
+
+\textbf{b) Odvození s vlivem zpožděných neutronů}
+
+Nejprve si ujasníme, o co se jedná. Neutrony vznikající při štěpení můžeme členit na:
+
+\begin{itemize}
+  \item \textbf{Okamžité neutrony} -- vznikají ihned (do $10^{-13}$~s) emisí z mateřského jádra (FP -- Fission Product) se střední energií cca 2~MeV. Při štepení se FP nacházejí v excitovaném stavu a s přebytkem neutronů $\rightarrow$ těch se mohou zbavit buď za pomoci $\beta^-$ rozpadu (vzniká dceřiné jádro), nebo emisí okamžitého neutronu. Často se tyto FP označují jako \textbf{prekurzory}.
+  \item \textbf{Zpožděné neutrony} -- jedná se o neutrony, které se uvolňují až po nějaké době, se stření energií cca 0,5~MeV. Vznikají emisí neutronů z dceřiných jader (DP -- Daughter Product), které vznikají radioaktivním rozpadem FP. DP se často označují jako \textbf{emitory}.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img/1.png}
+  \caption{Vznik okamžitých a zpožděných neutronů.}
+  \label{fig_zpozdenky}
+\end{figure}
+
+Ačkoliv jsou zpožděné neutrony emitovány emitory, pro jejich charakteristiku je přiřazujeme původním prekurzorům. Těch mohou být desítky, proto je dělíme do několika skupin (JEFF 8~skupin, ENDF/B 6~skupin) podle poločasu rozpadu. Pro popis se zavádí tzv. \textbf{podíl zpožděných neutronů} $\beta$ (-) jako:
+
+\begin{equation}
+  \boxed{
+  \beta \equiv \dfrac{\nu_D}{\nu_T},
+  \label{zpozdenky}}
+\end{equation}
+
+kde:
+
+\begin{itemize}
+  \item $\nu_D$ (-) značí střední počet zpožděných neutronů vzniklých při jednom štěpení a
+  \item $\nu_T$ (-) značí střední počet všech vzniklých neutronů.
+\end{itemize}
+
+Obdobně lze zavést $\nu_i$, $\beta_i$, $T_{1/2}^i$, $\tau_i$ a $\lambda_i$ pro jednotlivé skupiny (rodiny) zpožděných neutronů.\\
+
+Dále se pro popis zavádí tzv. \textbf{efektivní střední doba života} $\ell^*$ (s) jako:
+
+\begin{equation}
+  \boxed{
+  \ell^* \equiv \ell(1-\beta) + \sum_i \beta_i \tau_i,
+  \label{efektivni_stredni_doba_zivota}}
+\end{equation}
+
+\textbf{efektivní střední doba vzniku} $\Lambda^*$ (s) jako:
+
+\begin{equation}
+  \boxed{
+  \Lambda^* = \dfrac{\ell^*}{k_{\text{ef}}}
+  \label{efektivni_stredni_doba_vzniku}}
+\end{equation}
+
+a \textbf{efektivní perioda reaktoru} $T_e^*$ (s) jako:
+
+\begin{equation}
+  \boxed{
+  T_e^* \equiv \dfrac{\ell^*}{k_{\text{ef}} - 1}.
+  \label{efektivni_perioda}}
+\end{equation}
+
+V podstatě se jedná o vážený průměr přes koeficienty $\beta$, a ačkoliv je podíl zpožděných neutronů minimální (do 1~\%), díky dlouhým $\tau$ se efektivní doba života velmi prodlouží a perioda reaktoru natáhne. Proto jsou zpožděné neutrony velmi důležité k řízení reaktoru. Nastane-li kritičnost na okamžitých neutronech, tento prodlužovací efekt zcela vymizí, perioda reaktoru se zkrátí až o několik řádů a máme tu druhý Černobyl.\\
+
+\textbf{Př. 2:}
+
+Pro klasický PWR reaktor platí, že $\sum \beta_i \tau_i \approx 0,1$~s. Vezměme hodnoty z př. 1 a koukněme se, jak se změní perioda reaktoru:
+
+\begin{itemize}
+  \item $k_{\text{ef}} = 1,01$ vychází efektivní perioda $T_e^* = 10$~s a za 1~s se změní výkon 1,105x (původně $2,69 \cdot 10^{43}$x),
+  \item $k_{\text{ef}} = 1,001$ vychází efektivní perioda $T_e^* = 100$~s a za 1~s se změní výkon 1,010x (původně $2,20 \cdot 10^{4}$x),
+  \item $k_{\text{ef}} = 1,0001$ vychází efektivní perioda $T_e^* = 1000$~s a za 1~s se změní výkon 1,001x (původně $2,72$x).
+\end{itemize}
+
+Je vidět, že s uvažováním zpožděných neutronů se efektivní perioda natáhne o několik řádů a reaktor už není tolik citlivý na změnu $k_{\text{ef}}$.\\
+
+Lépe se řídí takové systémy, které mají větší $\beta$. Ve skutečnosti není reaktor takto ideální. Je třeba dále započítávat fotoneutrony (vznikající ($\gamma$,n) reakcí na lehkých jádrech, např. Be), více skupin zpožděných neutronů apod. Důležitá je i energetická závislost. Jelikož zpožděné neutrony vznikají s menší energií (0,5~Mev vs. 2~Mev) a mají náskok ve zpomalování. Díky nižší energii nemohou zpožděné neutrony nikdy zapříčinit štepení na štěpitelných jádrech.\\
+
+Kvůli tomu všemu se zavádí tzv. \textbf{efektivní podíl zpožděných neutronů} $\beta_{\text{ef}}$ (-), což je umělá hodnota, která koriguje energetický rozdíl ve skupinách, jelikož každá ze skupin má jiný vliv na štepení. Lze ji zavést pomocí vztahu:
+
+\begin{equation}
+  \beta_{\text{ef}} = \beta \cdot I,
+\end{equation}
+
+kde $I$ (-) značí tzv. \textbf{funkci vlivu} a závisí na konkrétním reaktoru. Říká, jak je snadné pro zpožděné neutrony štěpit, oproti okamžitým neutronům. Obecně se pohybuje okolo $\approx 1$, při bližším studiu lze napsat: FR $<1$ a LWR $>1$.\\
+
+Nyní si ještě ukažme rovnice jednobodové kinetiky se zpožděnými neutrony. Odvození je podobné jako v předcházejícím případě, pouze se původní vztah modifikuje. Výsledkem je soustava lineárních diferenciálních rovnic v destrukčním tvaru:
+
+\begin{equation}
+  \boxed{
+  \dfrac{dN}{dt} = \dfrac{k_{\text{ef}}(1-\beta_{\text{ef}})-1}{\ell} N(t) + \sum_{i=1}^m \lambda_i C_i(t),
+  \label{rovnice_kinetiky_zpozdenky_1}}
+\end{equation}
+
+\begin{equation}
+  \boxed{
+  \dfrac{dC_i}{dt} = -\lambda_i C_i(t) + \dfrac{\beta_{\text{ef},i} k_{\text{ef}} N(t)}{\ell},
+  \label{rovnice_kinetiky_zpozdenky_2}}
+\end{equation}
+
+resp. rovnice v produkčním tvaru:
+
+\begin{equation}
+  \boxed{
+  \dfrac{dN}{dt} = \dfrac{\rho - \beta_{\text{ef}}}{\Lambda} N(t) + \sum_{i=1}^m \lambda_i C_i(t),
+  \label{rovnice_kinetiky_zpozdenky_3}}
+\end{equation}
+
+\begin{equation}
+  \boxed{
+  \dfrac{dC_i}{dt} = -\lambda_i C_i(t) + \dfrac{\beta_{\text{ef},i}  N(t)}{\Lambda}.
+  \label{rovnice_kinetiky_zpozdenky_4}}
+\end{equation}
+
+\textbf{c) Opáčko}
+
+Na závěr kapitolky rychlá vzorečkiáda (viz tabulka \ref{table_vzorecky_kinetika}).
+
+\begin{table}[H]
+\centering
+\caption{Vzorečky s rovnicemi jednobodové kinetiky.}
+\label{table_vzorecky_kinetika}
+\begin{tabular}{@{}rcc@{}}
+\toprule
+\textbf{Parametr}                 & \textbf{Bez zpožděnek} & \textbf{Se zpožděnkami}   \\ \midrule
+\textbf{Střední doba života}      & $\ell = \dfrac{1}{v \Sigma_a} \dfrac{1}{1+L^2B_g^2}$    & $\ell^* = \ell(1-\beta) + \sum_i \beta_i \tau_i$      \\ [15pt]
+\textbf{Střední doba vzniku}      & $\Lambda = \dfrac{\ell}{k_{\text{ef}}}$                 & $\Lambda^* = \dfrac{\ell^*}{k_{\text{ef}}}$           \\ [15pt]
+\textbf{Perioda reaktoru}         & $T_e = \dfrac{\ell}{k_{\text{ef}} - 1}$                 & $T_e^* = \dfrac{\ell^*}{k_{\text{ef}} - 1}$           \\ [15pt]
+\textbf{R-ce v destrukčním tvaru} & $\dfrac{dN}{dt} = \dfrac{k_{\text{ef}} - 1}{\ell} N(t)$ & $\dfrac{dN}{dt} = \dfrac{k_{\text{ef}}(1-\beta_{\text{ef}})-1}{\ell} N(t) + \sum_{i=1}^m \lambda_i C_i(t)$        \\ [15pt]
+                                  &                                                         & $\dfrac{dC_i}{dt} = -\lambda_i C_i(t)+\dfrac{\beta_{\text{ef},i} k_{\text{ef}} N(t)}{\ell}$           \\ [15pt]
+\textbf{R-ce v produkčním tvaru}  & $\dfrac{dN}{dt} = \dfrac{\rho}{\Lambda} N(t)$           & $\dfrac{dN}{dt} = \dfrac{\rho - \beta_{\text{ef}}}{\Lambda} N(t) + \sum_{i=1}^m \lambda_i C_i(t)$                 \\ [15pt]
+                                  &                                                         & $\dfrac{dC_i}{dt} = -\lambda_i C_i(t) + \dfrac{\beta_{\text{ef},i}  N(t)}{\Lambda}$                            \\ [15pt] \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Řešení rovnic jednobodové kinetiky}
+
+\textbf{a) Řešení bez vlivu zpožděných neutronů}
+
+Řešení rovnice bez započtení zpožděných neutronů je triviální (jedná se pouze o jednu lineární diferenciální rovnici prvního řádu) a už zde bylo zmíněno. Pro zopakování, řešíme rovnici:
+
+$$ \dfrac{dN}{dt} = \dfrac{\rho (t)}{\Lambda} N(t) $$
+
+s počáteční podmínkou $N(0) = N_0$ (ustálený stav). Rovnice (při $\rho = \text{konst.}$) vede na řešení:
+
+\begin{equation}
+  \boxed{
+  N(t) = N_0 \exp \left ( \dfrac{\rho}{\Lambda} t \right ).
+  \label{kinetika_reseni}}
+\end{equation}
+
+\textbf{b) Řešení s vlivem zpožděných neutronů}
+
+Řešíme soustavu lineárních diferenciálních rovnic:
+
+$$ \dfrac{dN}{dt} = \dfrac{\rho(t) - \beta_{\text{ef}}}{\Lambda} N(t) + \sum_{i=1}^m \lambda_i C_i(t), $$
+
+$$ \dfrac{dC_i}{dt} = -\lambda_i C_i(t) + \dfrac{\beta_{\text{ef},i}  N(t)}{\Lambda}. $$
+
+s počátečními podmínkami (ustálený stav) $N(0) = N_0$ a $C_i(0) = C_{i,0}$. Tento stav lze předpokládat, pokud se reaktor nachází dostatečně dlouhou dobu v ustáleném stavu (při konstantním výkonu), potom je i koncentrace jader $C_i$ konstantní. Tuto koncentraci lze získat z druhé rovnice z doby před $t=0$:
+
+$$ 0 = -\lambda_i C_{i,0} + \dfrac{\beta_{\text{ef},i}  N_0}{\Lambda \lambda_i} \rightarrow C_{i,0} = \dfrac{\beta_{\text{ef},i}  N_0}{\Lambda}. $$
+
+Aplikujme na obě rovnice LT, dostaneme:
+
+$$ s \tilde{N}(s) - N_0 = \dfrac{\mathcal{L}[\rho(t) N(t)](s)}{\Lambda} - \dfrac{\beta_{\text{ef}} \tilde{N}(s)}{\Lambda} + \sum_{i=1}^m \lambda_i \tilde{C_i}(s), $$
+
+$$ s \tilde{C_i}(s) - C_{i,0} = -\lambda_i \tilde{C_i}(s) + \dfrac{\beta_{\text{ef},i}  \tilde{N}(s)}{\Lambda}. $$
+
+Do druhé rovnice můžeme rovnou dosadit za $C_{i,0}$ (známe z počátečních podmínek, $N_0$ zachováváme, to získáme z normalizace výkonu), čímž získáváme soustavu algebraických rovnic:
+
+$$ s \tilde{N}(s) - N_0 = \dfrac{\mathcal{L}[\rho(t) N(t)](s)}{\Lambda} - \dfrac{\beta_{\text{ef}} \tilde{N}(s)}{\Lambda} + \sum_{i=1}^m \lambda_i \tilde{C_i}(s), $$
+
+$$ s \tilde{C_i}(s) - \dfrac{\beta_{\text{ef},i}  N_0}{\Lambda} = -\lambda_i \tilde{C_i}(s) + \dfrac{\beta_{\text{ef},i}  \tilde{N}(s)}{\Lambda}. $$
+
+Pokračujeme tak, že z druhé rovnice vyjádříme $\lambda_i \tilde{C_i}(s)$:
+
+$$ \lambda_i \tilde{C_i}(s) = \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s) + \beta_{\text{ef,i}}N_0}{\Lambda(\lambda_i + s)} $$
+
+a dosadíme do první rovnice (s vynásobením $\Lambda$):
+
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \beta_{\text{ef}} \tilde{N}(s) + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}N_0}{\lambda_i + s}. $$
+
+Nyní rozepíšeme $\beta_{\text{ef}}$ do sumy přes $\beta_{\text{ef,i}}$ a rozšíříme přes $\lambda_i + s$. Po vynásobení se něco požere:
+
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \tilde{N}(s)}{\lambda_i + s}(\lambda_i + s) + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}N_0}{\lambda_i + s}, $$
+
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s)}{\lambda_i + s} - \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} s \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}N_0}{\lambda_i + s}, $$
+
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} s \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}N_0}{\lambda_i + s}. $$
+
+Z PS rovnice vytáhneme $(s \tilde{N}(s) - N_0)$:
+
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \left [ \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}}{\lambda_i + s}(s \tilde{N}(s) - N_0) \right ]$$
+
+a po převedení sumy na LS:
+
+$$ \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}}{\lambda_i + s} \right ) (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s). $$
+
+Nyní je konečně možné vyjádřit $\tilde{N}(s)$:
+
+$$ \tilde{N}(s) = \dfrac{\mathcal{L}[\rho(t) N(t)](s)}{s \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}}{\lambda_i + s} \right )} + \dfrac{N_0}{s}. $$
+
+Nyní pro zjednodušení zápisu zavedeme tzv. \textbf{přenosovou funkci nulového reaktoru} $\tilde{G_0}(s)$ vztahem:
+
+\begin{equation}
+  \boxed{
+  \tilde{G_0}(s) \equiv \dfrac{1}{s \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}}{\lambda_i + s} \right )}.
+  \label{prenosova_funkce}
+  }
+\end{equation}
+
+Potom platí:
+
+$$ \tilde{N}(s) = \tilde{G_0}(s) \cdot \mathcal{L}[\rho(t) N(t)](s) + \dfrac{N_0}{s}. $$
+
+Teď už pouze zbývá provést inverzní LT. Ale to je vopruz, takže budeme postupovat obráceně. Z vět o LT konvoluce a konstanty (0.~kapitola) je jasné, že:
+
+$$ \tilde{N}(s) = \tilde{G_0}(s) \cdot \mathcal{L}[\rho(t) N(t)](s) + \dfrac{N_0}{s} $$
+$$ \Leftrightarrow $$
+$$ N(s) = G_0(s) * [\rho(t) N(t)] + N_0. $$
+
+Po aplikaci definice konvoluce (opět 0.~kapitola) získáváme \textbf{Rovnici jednobodové kinetiky v integrálním tvaru}:
+
+\begin{equation}
+  \boxed{
+  N(t) = \int_0^t G_0(t-t') \rho(t') N(t')dt' + N_0.
+  \label{integralni_kinetika}
+  }
+\end{equation}
+
+To je všechno pěkný, ale musíme ještě znát obraz přenosové funkce $G_0(t)$. Zde musíme vycházet z definice $\tilde{G_0}(s)$, kterou převedeme na parciální zlomky a aplikací vět z 0.~kapitoly není obtížné nalézt původní funkci $G_0(t)$. To ale dělat nebudeme, musí nám stačit vědět, že něco takového je možné\footnote{:)}. Platí totiž:
+
+$$ \tilde{G_0}(s) = \dfrac{\varphi(s)}{\Psi(s)} = \sum_{n=0}^m \dfrac{A_n}{s-s_n}, $$
+
+kde $\varphi(s)$ je libovolný polynom, $\Psi(s)$ je polynom řádu $m$ a $s_n$ jsou jeho kořeny. $A_n$ jsou konstanty získané dle:
+
+$$ A_n = \dfrac{\varphi(s_n)}{\Psi'(s_n)}. $$
+
+Po převodu dostaneme:
+
+$$ G_0(t) = \sum_{n=0}^m = A_n e^{s_n t}. $$
+
+Ještě si trochu pohrajeme s $\tilde{G_0}(s)$. Definovaný vztah \eqref{prenosova_funkce} rozšíříme výrazem $\prod_{n=1}^m (s+\lambda_n)$, čímž se nám ve jmenovateli něco požere:
+
+$$ \tilde{G_0}(s) \equiv \dfrac{\prod_{n=1}^m (s+\lambda_n)}{s \left ( \Lambda \prod_{n=1}^m (s+\lambda_n)  + \sum_{n=1}^m \beta_{\text{ef,n}}\prod_{k=1, k \neq n}^m(\lambda_k + s) \right )}. $$
+
+Jaké budou kořeny polynomu ve jmenovateli? První je jasný, tj. $s_0 = 0$. Výraz v hranaté závorce je natuty kladný $\rightarrow$ zbylé kořeny nemohou být kladné $\rightarrow$ zbylé kořeny jsou určitě záporné, tj. $s_1, s_2, ..., s_n < 0$.\\
+
+Abychom získali konstanty $A_n$, je vhodné si polynomy upravit do lepšího tvaru. Z MAA1 víme:
+
+$$ \Psi(s) = K \cdot \prod_{n=0}^m (s-s_n) $$
+
+a jelikož známe první kořen $s_0 = 0$:
+
+$$ \Psi(s) = K \cdot s \prod_{n=1}^m (s-s_n) $$
+
+Chybí nám už pouze získat konstantu $K$. Tu získáme z řešení limity $\lim_{s \to \infty} s \cdot \tilde{G_0}(s)$. Z definice přenosové funkce \eqref{prenosova_funkce} platí:
+
+$$ \lim_{s \to \infty} s \cdot \left [ \dfrac{1}{s \left ( \Lambda + \sum_{n=1}^m \dfrac{\beta_{\text{ef,n}}}{\lambda_n + s} \right )} \right ] = \dfrac{1}{\Lambda} $$
+
+a z námi upraveného tvaru pro polynom $\Psi(s)$ (ten, ve kterém se objevuje konstanta $K$) zase platí:
+
+$$ \lim_{s \to \infty} s \cdot \left [ \dfrac{\prod_{n=1}^m (s+\lambda_n)}{K \cdot s \prod_{n=1}^m (s-s_n)} \right ] = \dfrac{1}{K} $$
+
+Je tedy jasné, že:
+
+$$ K = \Lambda, $$
+
+a tedy:
+
+$$ \tilde{G_0}(s) = \dfrac{\prod_{n=1}^m (s+\lambda_n)}{\Lambda \cdot s \prod_{n=1}^m (s-s_n)}. $$
+
+Pro ty co se ztratili v tom, o co se vlastně snažíme. Pokoušíme se nalézt konstanty $A_n$, které jsme si pro připomenutí definovali jako:
+
+$$ \tilde{G_0}(s) = \dfrac{\varphi(s)}{\Psi(s)} = \sum_{n=0}^m \dfrac{A_n}{s-s_n}, $$
+
+$$ A_n = \dfrac{\varphi(s_n)}{\Psi'(s_n)}, $$
+
+kde v našem značení:
+
+$$ \Psi(s) = \Lambda \cdot s \prod_{n=1}^m (s-s_n). $$
+
+Funkci $\Psi(s)$ musíme derivovat, což je jednoduché, jelikož se jedná o produkt. Pro jeho derivaci platí:
+
+$$ \dfrac{d}{dx} \left ( \prod_{i=1}^k f_i(x) \right ) = \sum_{i=1}^k \left ( \dfrac{f_i'(x)}{f_i(x)} \prod_{j=1,j \neq i}^k f_j(x) \right ). $$
+
+Už je pozdě a je zbytečné rozepisovat postupy, zkrátka platí, že:
+
+$$ \Psi'(s) = \Lambda \prod_{n=1}^m (s-s_n) + \Lambda \cdot s \sum_{n=1}^m \prod_{k=1, k \neq n}^m (s-s_k). $$
+
+Při dosazení prvního kořene $s_0 = 0$ je řešení triviální, při dosazování zbylých kořenů je první člen vždy nulový a u druhého členu vypadne suma. Tedy:
+
+$$ \Psi'(s_0) = \Lambda \cdot \prod_{i=1, i \neq n}^m (-s_i), \: \: \: n = 0, $$
+
+$$ \Psi'(s_n) = \Lambda \cdot s_n \prod_{i=1, i \neq n}^m (s_n-s_i), \: \: \: \forall \: \widehat{n}. $$
+
+Rovněž platí (a bude se hodit):
+
+$$ \sum_{n=0}^m A_n = \dfrac{1}{\Lambda}. $$

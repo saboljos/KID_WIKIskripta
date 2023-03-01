@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  17 FEB 2023 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  1 MAR 2023 22:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -778,27 +778,27 @@ Package: easytable 2001/05/31v1.1
 \@tab@size@dash=\dimen401
 )
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 20.
+h' as default language. on input line 21.
  (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_0.aux)
 (./chapter_1.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
-Package chemgreek Info: Activating mapping `default' on line 20.
+Package chemgreek Info: Activating mapping `default' on line 21.
 
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -829,7 +829,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 20.
+or `english'. on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -869,7 +869,7 @@ or `english'. on input line 20.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 20.
+ on input line 21.
 
 \openout2 = `veličiny.aux'.
 
@@ -883,6 +883,13 @@ your preamble.
 
 
 
+] (./main.toc)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [3
+
+
 ]
 \openout2 = `chapter_0.aux'.
 
@@ -891,9 +898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-) [3
-
-
+) [4
 
 ]
 \openout2 = `chapter_1.aux'.
@@ -938,61 +943,110 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-[4
+[5
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
-[7]) [8] (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_0.aux)
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+[9]
+<img/1.png, id=47, 732.336pt x 490.2315pt>
+File: img/1.png Graphic file (type png)
+<use img/1.png>
+Package pdftex.def Info: img/1.png  used on input line 271.
+(pdftex.def)             Requested size: 364.19664pt x 243.7986pt.
+ [10]
+Overfull \hbox (9.14355pt too wide) in paragraph at lines 276--277
+\OT1/cmr/m/n/10.95 8 skupin, ENDF/B 6 skupin) po-dle polo^^Tcasu roz-padu. Pro 
+popis se zav^^Sad^^S^^P tzv. \OT1/cmr/bx/n/10.95 pod^^S^^Pl zpo^^Tzd^^Ten^^Sych
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[11 <./img/1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
+
+ []
+
+
+Overfull \hbox (0.23601pt too wide) in paragraph at lines 341--342
+[]\OT1/cmr/m/n/10.95 Nyn^^S^^P si je^^Tst^^Te uka^^Tzme rovnice jed-no-bodov^^S
+e kinetiky se zpo^^Tzd^^Ten^^Symi neu-trony. Odvozen^^S^^P je podobn^^Se
+ []
+
+[12]
+Overfull \hbox (3.10757pt too wide) in paragraph at lines 377--388
+ [][] 
+ []
+
+[13]
+Overfull \hbox (6.9284pt too wide) in paragraph at lines 414--415
+[]\OT1/cmr/m/n/10.95 s po^^Tc^^Sate^^Tcn^^S^^Pmi podm^^S^^Pnkami (ust^^Salen^^S
+y stav) $\OML/cmm/m/it/10.95 N\OT1/cmr/m/n/10.95 (0) = \OML/cmm/m/it/10.95 N[]$
+ \OT1/cmr/m/n/10.95 a $\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (0) = \OML/cmm
+/m/it/10.95 C[]$\OT1/cmr/m/n/10.95 . Tento stav lze p^^Tredpokl^^Sadat,
+ []
+
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
+
+ []
+
+[16] [17]) [18] (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_0.aux)
 (./chapter_1.aux)) ) 
 Here is how much of TeX's memory you used:
- 28745 strings out of 475075
- 755881 string characters out of 5783001
- 1215007 words of memory out of 5000000
- 49702 multiletter control sequences out of 15000+600000
- 476516 words of font info for 53 fonts, out of 8000000 for 9000
+ 28778 strings out of 475075
+ 756405 string characters out of 5783001
+ 1218007 words of memory out of 5000000
+ 49729 multiletter control sequences out of 15000+600000
+ 477051 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,103p,718b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
@@ -1008,10 +1062,10 @@ b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/
 fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (8 pages, 177958 bytes).
+Output written on main.pdf (18 pages, 228636 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

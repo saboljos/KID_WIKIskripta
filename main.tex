@@ -12,6 +12,7 @@
 \renewcommand{\figurename}{Obrázek}
 \renewcommand{\refname}{Zdroje}
 \renewcommand{\tablename}{Tabulka}
+\renewcommand{\contentsname}{Obsah}
 
 \setlength\parindent{0pt}
 \setcounter{section}{-1}
@@ -20,6 +21,15 @@
 \begin{document}
 \include{veličiny}
 \include{zkratky}
+
+\newpage
+\parskip=0pt
+\begin{small}
+\tableofcontents
+\end{small}
+\parskip=7pt
+\newpage
+
 \include{chapter_0}
 \include{chapter_1}
 \end{document}
