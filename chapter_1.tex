@@ -29,7 +29,7 @@ K popisu lze využít transportní rovnici, resp. zjednodušenou difúzní rovni
 
 V reálu to tak není, ale kupodivu dávají rovnice přijatelné výsledky.
 
-\subsubsection{Odvození rovnic jednobodové kinetiky}
+\subsection{Odvození rovnic jednobodové kinetiky}
 
 Pro odvození se vychází z 1G difúzní rovnice (s konstantním $D$ a $\Sigma_a$):
 
@@ -49,7 +49,7 @@ kde:
   \item $Q$ (1/cm$^3$s) značí zdroj neutronů.
 \end{itemize}
 
-\textbf{a) Odvození bez vlivu zpožděných neutronů}
+\subsubsection{Odvození bez vlivu zpožděných neutronů}
 
 Uvažuji zjednodušení tvaru:
 
@@ -189,6 +189,8 @@ S předpokladem počáteční podmínky $P(0) = P_0$ a úvahy, že $k_{\text{ef}
   \label{rovnice_kinetiky_vykon}
 \end{equation}
 
+\small
+
 \textbf{Př. 1:}
 
 Rovnice \eqref{rovnice_kinetiky_vykon} udává, jak rychle se mění výkon v systému v závislosti na $k_{\text{ef}}$ a $\ell$. Zadefinujeme si \textbf{periodu reaktoru} $T_e$ (s) jako dobu, za kterou se výkon v systému změní e-krát, pomocí vztahu:
@@ -202,8 +204,9 @@ Rovnice \eqref{rovnice_kinetiky_vykon} udává, jak rychle se mění výkon v sy
 Zatímco $k_{\text{ef}}$ lze ovlivnit (geometrie, obohacení, materiály), $\ell$ je pevně dáno a spjato se systémem\footnote{Teoreticky to lze také ovlivnit, ale asi těžko z rychlého reaktoru uělám tak jednoduše lehkovodní, žejo.}. Přehled rozsahů pro různé systémy zobrazuje tabulka \ref{table_stredni_doby_zivota}. Je tedy vidět, že např. rychlý reaktor bude na změny $k_{\text{ef}}$ reagovat mnohem rychleji, než reaktor moderovaný grafitem.\\
 
 \begin{table}[H]
+\small
 \centering
-\caption{Střední doby života pro různé typy reaktorů.}
+\caption{\small Střední doby života pro různé typy reaktorů.}
 \label{table_stredni_doby_zivota}
 \begin{tabular}{@{}rc@{}}
 \toprule
@@ -221,6 +224,8 @@ Pokud uvažujeme LWR reaktor ($\ell = 10^{-5}$), tak pro:
   \item $k_{\text{ef}} = 1,001$ vychází perioda $T_e = 0,1$~s a za 1~s se změní výkon $2,20 \cdot 10^{4}$x,
   \item $k_{\text{ef}} = 1,0001$ vychází perioda $T_e = 1$~s a za 1~s se změní výkon $2,72$x.
 \end{itemize}
+
+\normalsize
 
 K rovnici \eqref{rovnice_kinetiky_reseni} je možné dojít i jednoduchou úvahou. Jelikož platí úměra mezi $n(t)$ a $N(t)$:
 
@@ -257,7 +262,7 @@ $\Lambda$ v podstatě vyjadřuje dobu, za kterou se zreprodukuje 1 neutron. Plat
   \item $k_{\text{ef}} < 1$ $\rightarrow$ $\Lambda > \ell$ $\rightarrow$ podkritický systém a zreprodukování neutronu trvá déle, než doba jejich života.
 \end{itemize}
 
-\textbf{b) Odvození s vlivem zpožděných neutronů}
+\subsubsection{Odvození s vlivem zpožděných neutronů}
 
 Nejprve si ujasníme, o co se jedná. Neutrony vznikající při štěpení můžeme členit na:
 
@@ -316,6 +321,8 @@ a \textbf{efektivní perioda reaktoru} $T_e^*$ (s) jako:
 
 V podstatě se jedná o vážený průměr přes koeficienty $\beta$, a ačkoliv je podíl zpožděných neutronů minimální (do 1~\%), díky dlouhým $\tau$ se efektivní doba života velmi prodlouží a perioda reaktoru natáhne. Proto jsou zpožděné neutrony velmi důležité k řízení reaktoru. Nastane-li kritičnost na okamžitých neutronech, tento prodlužovací efekt zcela vymizí, perioda reaktoru se zkrátí až o několik řádů a máme tu druhý Černobyl.\\
 
+\small
+
 \textbf{Př. 2:}
 
 Pro klasický PWR reaktor platí, že $\sum \beta_i \tau_i \approx 0,1$~s. Vezměme hodnoty z př. 1 a koukněme se, jak se změní perioda reaktoru:
@@ -327,6 +334,8 @@ Pro klasický PWR reaktor platí, že $\sum \beta_i \tau_i \approx 0,1$~s. Vezm�
 \end{itemize}
 
 Je vidět, že s uvažováním zpožděných neutronů se efektivní perioda natáhne o několik řádů a reaktor už není tolik citlivý na změnu $k_{\text{ef}}$.\\
+
+\normalsize
 
 Lépe se řídí takové systémy, které mají větší $\beta$. Ve skutečnosti není reaktor takto ideální. Je třeba dále započítávat fotoneutrony (vznikající ($\gamma$,n) reakcí na lehkých jádrech, např. Be), více skupin zpožděných neutronů apod. Důležitá je i energetická závislost. Jelikož zpožděné neutrony vznikají s menší energií (0,5~Mev vs. 2~Mev) a mají náskok ve zpomalování. Díky nižší energii nemohou zpožděné neutrony nikdy zapříčinit štepení na štěpitelných jádrech.\\
 
@@ -366,7 +375,7 @@ resp. rovnice v produkčním tvaru:
   \label{rovnice_kinetiky_zpozdenky_4}}
 \end{equation}
 
-\textbf{c) Opáčko}
+\subsubsection{Přehled vzorečků}
 
 Na závěr kapitolky rychlá vzorečkiáda (viz tabulka \ref{table_vzorecky_kinetika}).
 
@@ -387,23 +396,27 @@ Na závěr kapitolky rychlá vzorečkiáda (viz tabulka \ref{table_vzorecky_kine
 \end{tabular}
 \end{table}
 
-\subsubsection{Řešení rovnic jednobodové kinetiky}
+\subsection{Řešení rovnic jednobodové kinetiky}
 
-\textbf{a) Řešení bez vlivu zpožděných neutronů}
+\subsubsection{Řešení bez vlivu zpožděných neutronů}
 
 Řešení rovnice bez započtení zpožděných neutronů je triviální (jedná se pouze o jednu lineární diferenciální rovnici prvního řádu) a už zde bylo zmíněno. Pro zopakování, řešíme rovnici:
 
 $$ \dfrac{dN}{dt} = \dfrac{\rho (t)}{\Lambda} N(t) $$
 
-s počáteční podmínkou $N(0) = N_0$ (ustálený stav). Rovnice (při $\rho = \text{konst.}$) vede na řešení:
+s počáteční podmínkou $N(0) = N_0$ (ustálený stav).\\
+
+\textbf{a) Konstatní reaktivita}
+
+Při $\rho = \text{konst.}$ vede rovnice na exponenciální řešení:
 
 \begin{equation}
   \boxed{
-  N(t) = N_0 \exp \left ( \dfrac{\rho}{\Lambda} t \right ).
+  N(t) = N_0 \exp \left ( \dfrac{\rho_0}{\Lambda} t \right ).
   \label{kinetika_reseni}}
 \end{equation}
 
-\textbf{b) Řešení s vlivem zpožděných neutronů}
+\subsubsection{Řešení s vlivem zpožděných neutronů}
 
 Řešíme soustavu lineárních diferenciálních rovnic:
 
@@ -429,37 +442,37 @@ $$ s \tilde{C_i}(s) - \dfrac{\beta_{\text{ef},i}  N_0}{\Lambda} = -\lambda_i \ti
 
 Pokračujeme tak, že z druhé rovnice vyjádříme $\lambda_i \tilde{C_i}(s)$:
 
-$$ \lambda_i \tilde{C_i}(s) = \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s) + \beta_{\text{ef,i}}N_0}{\Lambda(\lambda_i + s)} $$
+$$ \lambda_i \tilde{C_i}(s) = \dfrac{\beta_{\text{ef},i} \lambda_i \tilde{N}(s) + \beta_{\text{ef},i}N_0}{\Lambda(\lambda_i + s)} $$
 
 a dosadíme do první rovnice (s vynásobením $\Lambda$):
 
-$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \beta_{\text{ef}} \tilde{N}(s) + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}N_0}{\lambda_i + s}. $$
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \beta_{\text{ef}} \tilde{N}(s) + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i}N_0}{\lambda_i + s}. $$
 
-Nyní rozepíšeme $\beta_{\text{ef}}$ do sumy přes $\beta_{\text{ef,i}}$ a rozšíříme přes $\lambda_i + s$. Po vynásobení se něco požere:
+Nyní rozepíšeme $\beta_{\text{ef}}$ do sumy přes $\beta_{\text{ef},i}$ a rozšíříme přes $\lambda_i + s$. Po vynásobení se něco požere:
 
-$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \tilde{N}(s)}{\lambda_i + s}(\lambda_i + s) + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}N_0}{\lambda_i + s}, $$
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef},i} \tilde{N}(s)}{\lambda_i + s}(\lambda_i + s) + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i}N_0}{\lambda_i + s}, $$
 
-$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s)}{\lambda_i + s} - \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} s \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}N_0}{\lambda_i + s}, $$
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef},i} \lambda_i \tilde{N}(s)}{\lambda_i + s} - \sum_{i=1}^m \dfrac{\beta_{\text{ef},i} s \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i} \lambda_i \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i}N_0}{\lambda_i + s}, $$
 
-$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}} s \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}N_0}{\lambda_i + s}. $$
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \sum_{i=1}^m \dfrac{\beta_{\text{ef},i} s \tilde{N}(s)}{\lambda_i + s} + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i}N_0}{\lambda_i + s}. $$
 
 Z PS rovnice vytáhneme $(s \tilde{N}(s) - N_0)$:
 
-$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \left [ \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}}{\lambda_i + s}(s \tilde{N}(s) - N_0) \right ]$$
+$$ \Lambda (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s) - \left [ \sum_{i=1}^m \dfrac{\beta_{\text{ef},i}}{\lambda_i + s}(s \tilde{N}(s) - N_0) \right ]$$
 
 a po převedení sumy na LS:
 
-$$ \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}}{\lambda_i + s} \right ) (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s). $$
+$$ \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i}}{\lambda_i + s} \right ) (s \tilde{N}(s) - N_0) = \mathcal{L}[\rho(t) N(t)](s). $$
 
 Nyní je konečně možné vyjádřit $\tilde{N}(s)$:
 
-$$ \tilde{N}(s) = \dfrac{\mathcal{L}[\rho(t) N(t)](s)}{s \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}}{\lambda_i + s} \right )} + \dfrac{N_0}{s}. $$
+$$ \tilde{N}(s) = \dfrac{\mathcal{L}[\rho(t) N(t)](s)}{s \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i}}{\lambda_i + s} \right )} + \dfrac{N_0}{s}. $$
 
 Nyní pro zjednodušení zápisu zavedeme tzv. \textbf{přenosovou funkci nulového reaktoru} $\tilde{G_0}(s)$ vztahem:
 
 \begin{equation}
   \boxed{
-  \tilde{G_0}(s) \equiv \dfrac{1}{s \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef,i}}}{\lambda_i + s} \right )}.
+  \tilde{G_0}(s) \equiv \dfrac{1}{s \left ( \Lambda + \sum_{i=1}^m \dfrac{\beta_{\text{ef},i}}{\lambda_i + s} \right )}.
   \label{prenosova_funkce}
   }
 \end{equation}
@@ -478,7 +491,7 @@ Po aplikaci definice konvoluce (opět 0.~kapitola) získáváme \textbf{Rovnici 
 
 \begin{equation}
   \boxed{
-  N(t) = \int_0^t G_0(t-t') \rho(t') N(t')dt' + N_0.
+  N(t) = N_0 + \int_0^t G_0(t-t') \rho(t') N(t')dt'.
   \label{integralni_kinetika}
   }
 \end{equation}
@@ -491,13 +504,22 @@ kde $\varphi(s)$ je libovolný polynom, $\Psi(s)$ je polynom řádu $m$ a $s_n$ 
 
 $$ A_n = \dfrac{\varphi(s_n)}{\Psi'(s_n)}. $$
 
-Po převodu dostaneme:
+Po převodu (suma lomených výrazů se zpět transformuje na sumu exponenciál) dostaneme:
 
-$$ G_0(t) = \sum_{n=0}^m = A_n e^{s_n t}. $$
+\begin{equation}
+  \boxed{
+  G_0(t) = \sum_{n=0}^m A_n e^{s_n t}.
+  \label{prenosova_funkce_reseni}
+  }
+\end{equation}
 
-Ještě si trochu pohrajeme s $\tilde{G_0}(s)$. Definovaný vztah \eqref{prenosova_funkce} rozšíříme výrazem $\prod_{n=1}^m (s+\lambda_n)$, čímž se nám ve jmenovateli něco požere:
+\small
 
-$$ \tilde{G_0}(s) \equiv \dfrac{\prod_{n=1}^m (s+\lambda_n)}{s \left ( \Lambda \prod_{n=1}^m (s+\lambda_n)  + \sum_{n=1}^m \beta_{\text{ef,n}}\prod_{k=1, k \neq n}^m(\lambda_k + s) \right )}. $$
+\textbf{Kuchařka s postupem:}
+
+Následní text je pouze matematická kuchařka, jak získat koeficienty $A_n$ a $s_n$. Definovaný vztah \eqref{prenosova_funkce} rozšíříme výrazem $\prod_{n=1}^m (s+\lambda_n)$, čímž se nám ve jmenovateli něco požere:
+
+$$ \tilde{G_0}(s) \equiv \dfrac{\prod_{n=1}^m (s+\lambda_n)}{s \left ( \Lambda \prod_{n=1}^m (s+\lambda_n)  + \sum_{n=1}^m \beta_{\text{ef},n}\prod_{k=1, k \neq n}^m(\lambda_k + s) \right )}. $$
 
 Jaké budou kořeny polynomu ve jmenovateli? První je jasný, tj. $s_0 = 0$. Výraz v hranaté závorce je natuty kladný $\rightarrow$ zbylé kořeny nemohou být kladné $\rightarrow$ zbylé kořeny jsou určitě záporné, tj. $s_1, s_2, ..., s_n < 0$.\\
 
@@ -511,7 +533,7 @@ $$ \Psi(s) = K \cdot s \prod_{n=1}^m (s-s_n) $$
 
 Chybí nám už pouze získat konstantu $K$. Tu získáme z řešení limity $\lim_{s \to \infty} s \cdot \tilde{G_0}(s)$. Z definice přenosové funkce \eqref{prenosova_funkce} platí:
 
-$$ \lim_{s \to \infty} s \cdot \left [ \dfrac{1}{s \left ( \Lambda + \sum_{n=1}^m \dfrac{\beta_{\text{ef,n}}}{\lambda_n + s} \right )} \right ] = \dfrac{1}{\Lambda} $$
+$$ \lim_{s \to \infty} s \cdot \left [ \dfrac{1}{s \left ( \Lambda + \sum_{n=1}^m \dfrac{\beta_{\text{ef},n}}{\lambda_n + s} \right )} \right ] = \dfrac{1}{\Lambda} $$
 
 a z námi upraveného tvaru pro polynom $\Psi(s)$ (ten, ve kterém se objevuje konstanta $K$) zase platí:
 
@@ -547,8 +569,208 @@ Při dosazení prvního kořene $s_0 = 0$ je řešení triviální, při dosazov
 
 $$ \Psi'(s_0) = \Lambda \cdot \prod_{i=1, i \neq n}^m (-s_i), \: \: \: n = 0, $$
 
-$$ \Psi'(s_n) = \Lambda \cdot s_n \prod_{i=1, i \neq n}^m (s_n-s_i), \: \: \: \forall \: \widehat{n}. $$
+$$ \Psi'(s_n) = \Lambda \cdot s_n \prod_{i=1, i \neq n}^m (s_n-s_i), \: \: \: \forall \: n \in \widehat{m}. $$
+
+\normalsize
 
 Rovněž platí (a bude se hodit):
 
 $$ \sum_{n=0}^m A_n = \dfrac{1}{\Lambda}. $$
+
+\subsubsection{Analytické řešení s vlivem zpožděných neutronů}
+
+Vycházíme z řešení rovnice jednobodové kinetiky v integrálním tvaru \eqref{integralni_kinetika}. Rovnice je analyticky řešitelná pouze pro 3 různé případy $\rho$:
+
+\begin{itemize}
+  \item impuls $\rightarrow$ impulsní charakteristika,
+  \item konstanta $\rightarrow$ přechodová charakteristika,
+  \item lineární/periodická závislost.
+\end{itemize}
+
+\textbf{a) Impulsní charakeristika}
+
+Jde tedy o případ, kdy do kritického systému zasáhneme kladnou/zápornou reaktivitu ve tvaru impulsu. Reálně nemůže nastat, ale matematicko-idealisticky lze $\rho$ vyjádřit pomocí Dirackovy $\delta$ funkce:
+
+$$ \rho(t) = \rho_0 \delta (t). $$
+
+Dále tedy řešíme rovnici \eqref{integralni_kinetika}:
+
+$$ N(t) = N_0 + \int_0^t G_0(t-t') \rho(t') N(t')dt', $$
+
+$$ N(t) = N_0 + G_0(t) \rho_0 N_0. $$
+
+Nás ale zajímá relativní změna $\dfrac{\Delta N}{N_0}$, přičemž za $G_0(t)$ dosadíme z \eqref{prenosova_funkce_reseni}:
+
+\begin{equation}
+  \boxed{
+  \dfrac{\Delta N}{N_0} = \rho_0 G_0 (t) = \rho_0 \sum_{n=0}^m A_n e^{s_n t}.
+  \label{impulsni_charakteristika}}
+\end{equation}
+
+Jelikož jsou členy $s_n < 0 \: \: \: \forall \: n \in \widehat{m}$ a $s_0 = 0$, jsou exponenciály ve výrazu \eqref{impulsni_charakteristika} klesající, tudíž i průběh relativní změny četnosti je klesající. Nejde ovšem k nule a v $t=0$ nejde k nekonečnu! Dále by nás tedy mohly zajímat limitní případy pro $t \rightarrow 0^+$ a $t \rightarrow \infty$. Řešíme přes limity:
+
+$$ \lim_{t \to 0^+} \dfrac{\Delta N}{N_0} = \rho_0 \sum_{n=0}^m A_n = \dfrac{\rho_0}{\Lambda} \doteq \dfrac{\rho_0}{\ell}, $$
+
+$$ \lim_{t \to \infty} \dfrac{\Delta N}{N_0} = \rho_0 \lim_{s \rightarrow 0} s \tilde{G_0}(s) = \dfrac{\rho_0}{\Lambda + \sum_{i = 1}^m \dfrac{\beta_{\text{ef},i}}{\lambda_i}} \doteq \dfrac{\rho_0}{\ell^*}. $$
+
+Průběh relativní změny četnosti při vnesení kladné i záporné reaktivity zobrazuje obrázek \ref{fig_impulsni}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{img/impulsni.jpg}
+  \caption{Závislost relativní změny četnosti neutronů pro impulsní charakteristiku.}
+  \label{fig_impulsni}
+\end{figure}
+
+Je tedy jasné, že v čase $t=0$ je relativní změna četnosti neutronů ovlivněna okamžitými neutrony a v čase $t \rightarrow \infty$ zpožděnými neutrony. V reálu se u vysokých vložených reaktivit (TRIGA) výrazně projevují zpětné vazby. Výrazy platí pro záporné i kladné vnesené reaktivity.\\
+
+\textbf{b) Přechodová charakteristika}
+
+Jde o případ, kdy je vložená reaktivita konstantní, tedy:
+
+$$\rho(t) = \rho_0$$
+
+Lze aplikovat i v reálu (pád tyče), i když ve skutečnosti to tak není (tyč padá nějakou tu dobu). Pro řešení vycházíme ještě z doby před zavedením integrální podoby jednobodové kinetiky\footnote{Tady si pro další usnadnění života přepíšu proměnou v LT pomocí $z$, aby se mi nepletlo s obecným řešením.}:
+
+$$ \tilde{N}(z) = \dfrac{N_0}{z} + \tilde{G_0}(z) \cdot \mathcal{L}[\rho(t) N(t)](z), $$
+
+$$ \tilde{N}(z) = \dfrac{N_0}{z} + \rho_0 \tilde{G_0}(z) \tilde{N}(z).$$
+
+Nás zajímá relativní četnost $\dfrac{\tilde{N}(z)}{N_0}$ a zároveň za $\tilde{G_0}(z)$ dosadíme z \eqref{prenosova_funkce}, tedy:
+
+\begin{equation}
+  \boxed{
+  \dfrac{\tilde{N}(z)}{N_0} = \dfrac{1}{z \left ( 1-\rho_0 \tilde{G_0}(z) \right )} = \dfrac{\Lambda + \sum_{i = 1}^m \dfrac{\beta_{\text{ef},i}}{z + \lambda_i}}{z \left ( \Lambda + \sum_{i = 1}^m \dfrac{\beta_{\text{ef},i}}{z + \lambda_i} \right ) - \rho_0}.
+  \label{prechodova_charakteristika_LT}}
+\end{equation}
+
+Rovnice \eqref{prechodova_charakteristika_LT} se dá transformovat úplně stejně, jako v minulé kapitole $\rightarrow$ převedu na parciální zlomky:
+
+$$ \dfrac{\tilde{N}(z)}{N_0} = \sum_{n=0}^m \dfrac{C_n}{z-z_n}, $$
+
+\begin{equation}
+  \boxed{
+  \dfrac{N(t)}{N_0} = \sum_{n=0}^m C_n e^{z_n t}.
+  \label{prechodova_charakteristika}}
+\end{equation}
+
+Zaměříme-li se na znaménka koeficientů $C_n$ a $z_n$, tak:
+
+\begin{itemize}
+  \item $z_0$ má stejné znaménko jako $\rho_0$,
+  \item $z_n < 0 \: \: \: \forall \: n \in \widehat{m}$,
+  \item $C_0 > 0$,
+  \item $C_n$ mají opačná znaménka než $\rho_0, \: \: \: \forall \: n \in \widehat{m}$.
+\end{itemize}
+
+Pro $\rho_0 < 0$ bude relativní četnost v čase exponenciálně klesat (což bude ovlivněno největším $|z_n|$, což je závislé na $\Lambda$ $\rightarrow$ s menším $\Lambda$ očekáváme strmější nástup).\\
+
+Pro $\rho_0 > 0$ po chvíli převládne kladné $z_0$ s $C_0$ a relativní četnost exponenciálně poroste. Do tohoto zlomového okamžiku bude relativní četnost také růst, ale s jiným průběhem.
+
+Průběh relativní četnosti při vnesení kladné i záporné reaktivity zobrazuje obrázek \ref{fig_prechodova}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{img/prechodova.jpg}
+  \caption{Závislost relativní četnosti neutronů pro přechodovou charakteristiku.}
+  \label{fig_prechodova}
+\end{figure}
+
+\small
+
+\textbf{Př. 3:}
+
+Vyzkoušíme si přechodovou charakteristiku na jedné skupině zpožděných neutronů. Tu bychom mohli získat pomocí $\bar{\lambda}$ středováním přes $\beta_{\text{ef}}$ jako:
+
+$$ \beta_{\text{ef}} = \sum_{i = 1}^m \beta_{\text{ef},i}, $$
+
+$$\bar{\lambda} = \dfrac{\sum_{i=1}^m \beta_{\text{ef},i} \lambda_i}{\beta_{\text{ef}}}, $$
+
+případně pomocí středování $\bar{\tau}$:
+
+$$ \bar{\tau} = \dfrac{\sum_{i=1}^m \beta_{\text{ef},i} \tau_i}{\beta_{\text{ef}}}. $$
+
+Nutno poznamenat, že oba způsoby nejou navzájem ekvivalentní a nedávají stejné hodnoty. S ohledem na skupiny upřednostňuje každý delší, případně kratší skupinu.\\
+
+Při řešení vycházíme z rovnice \eqref{prechodova_charakteristika_LT}, kterou převádíme pomocí parciálních zlomků na řešení \eqref{prechodova_charakteristika}. Máme pouze jednu skupinu zpožděnek, tudíž řešíme rovnici tvaru:
+
+$$ \dfrac{\tilde{N}(z)}{N_0} = \dfrac{\Lambda + \dfrac{\beta_{\text{ef}}}{z + \bar{\lambda}}}{z \left ( \Lambda \dfrac{\beta_{\text{ef}}}{z + \bar{\lambda}} \right ) - \rho_0} $$
+
+a hledáme pouze koeficienty $C_0$, $C_1$ a kořeny $z_0$, $z_1$. Pro nalezení kořenů pokládáme jmenovatele nule, což po pár řádcích úprav vede na kvadratickou rovnici:
+
+$$ z \left ( \Lambda + \dfrac{\beta_{\text{ef}}}{z + \bar{\lambda}} \right ) - \rho_0 = 0 $$
+
+$$ \Lambda z^2 + (\Lambda \bar{\lambda} + \beta_{\text{ef}} - \rho_0) z + (- \rho_0 \bar{\lambda}) = 0 $$
+
+$$ z = \dfrac{\Lambda \bar{\lambda} + \beta_{\text{ef}} - \rho_0}{2 \Lambda} \left ( -1 \pm \sqrt{1 + \dfrac{4 \Lambda \rho_0 \bar{\lambda}}{(\Lambda \bar{\lambda} + \beta_{\text{ef}} - \rho_0)^2}} \right ). $$
+
+Nyní provedeme pář předpokladů, které platí pro LWR:
+
+\begin{itemize}
+  \item $\Lambda \approx 10^{-4}$,
+  \item $\bar{\lambda} \approx 10^{-1}$,
+  \item $\beta_{\text{ef}} \approx 10^{-2}$
+\end{itemize}
+
+a předpoklad malých změn, tj. $\rho_0 \approx 10^{-3}$ (tedy, že $|\rho_0| << \beta_{\text{ef}}$). V takovém případě jsou členy:
+
+\begin{itemize}
+  \item $4 \Lambda \rho_0 \bar{\lambda} \approx 10^{-8}$,
+  \item $\Lambda \bar{\lambda} + \beta_{\text{ef}} - \rho_0 \approx 10^{-2}$,
+\end{itemize}
+
+což znamená, že: $|4 \Lambda \rho_0 \bar{\lambda}| << |\Lambda \bar{\lambda} + \beta_{\text{ef}} - \rho_0|$. Poté se nám i výpočet kořene z kvadratické rovnice zjednoduší (protože zlomek v odmocnině je velmi malý, pro nás nulový):
+
+$$ z = \dfrac{\Lambda \bar{\lambda} + \beta_{\text{ef}} - \rho_0}{2 \Lambda} \left ( -1 \pm 1 \right ). $$
+
+Prvním pohledem by se mohlo zdát, že jedním z kořenů je $z_0 = 0$. To ovšem zcela očividně není pravda (vliv zjednodušení) a musíme na něj přijít jinak. Určitě ale platí druhý kořen, tj.:
+
+$$ z_1 = \dfrac{\rho_0 - \beta_{\text{ef}} - \Lambda \bar{\lambda}}{\Lambda} \approx -\dfrac{\beta_{\text{ef}} - \rho_0}{\Lambda}. $$
+
+ Tento kořen je jistě záporný $\rightarrow$ $z_0$ musí mít stejné znaménko jako $\rho_0$. Ten zjistíme pomocí Viétových vzorců:
+
+$$ z_0 \cdot z_1 = \dfrac{c}{a} = \dfrac{-\rho_0 \bar{\lambda}}{\Lambda}, $$
+
+a tedy tím pádem:
+
+$$ z_0 = \dfrac{\rho_0 \bar{\lambda}}{\beta_{\text{ef}} - \rho_0}, $$
+
+což má skutečně stejné znaménko jako $\rho_0$. Ještě nalezneme koeficienty $C_0$ a $C_1$. Platí (viz kuchařka někde nahoře):
+
+$$ C_n = \dfrac{\varphi(z_n)}{\Psi'(z_n)} = \dfrac{\Lambda + \sum_{i = 1}^m \dfrac{\beta_{\text{ef},i}}{z_n + \lambda_i}}{\Lambda  + \sum_{i = 1}^m \dfrac{\beta_{\text{ef},i} \lambda_i}{(z_n + \lambda_i)^2}} = ||\text{pro 1 skupinu}|| =  \dfrac{\Lambda + \dfrac{\beta_{\text{ef}}}{z_n + \bar{\lambda}}}{\Lambda  + \dfrac{\beta_{\text{ef}} \bar{\lambda}}{(z_n + \bar{\lambda})^2}}. $$
+
+Nalezneme nejprve $C_0$. Po dosazení:
+
+$$ C_0 = \dfrac{\Lambda + \dfrac{\beta_{\text{ef}}}{\dfrac{\rho_0 \bar{\lambda}}{\beta_{\text{ef}} - \rho_0} + \bar{\lambda}}}{\Lambda  + \dfrac{\beta_{\text{ef}} \bar{\lambda}}{ \left ( \dfrac{\rho_0 \bar{\lambda}}{\beta_{\text{ef}} - \rho_0} + \bar{\lambda} \right ) ^2}}. $$
+
+Zase si ulehčíme život. Při předpokladu: $\dfrac{\rho_0 \bar{\lambda}}{\beta_{\text{ef}} - \rho_0} \approx 0$ pro výraz v čitateli a pouze jednou ve jmenovateli\footnote{Proč ve jmenovateli pouze jednou? Tady mi to fakt nejde do hlavy. Dle mého by bylo správnější udělat rozvoj do 1. řádu a něco poškrtat, jenže potom by nevyšel tak hezký výsledek jako u Bédi ve skriptech...} dostaneme po pár úpravách:
+
+$$ C_0 = \dfrac{\Lambda \bar{\lambda} + \beta_{\text{ef}}}{\Lambda \bar{\lambda} + \beta_{\text{ef}} - \rho_0}, $$
+
+což po aplikaci dalšího předpokladu: $\Lambda \bar{\lambda} \approx 0$ dá vzniku finálnímu výsledku:
+
+$$ C_0 = \dfrac{\beta_{\text{ef}}}{\beta_{\text{ef}} - \rho_0}. $$
+
+Člen $C_1$ získáme obdobně, nebo si pomůžeme, jelikož známe vztah pro sumu $C_n$ (podobné odvození jako pro sumu $A_n$):
+
+$$ \sum_{i = 1}^m C_n = 1, $$
+
+a tedy:
+
+$$ C_1 = -\dfrac{\rho_0}{\beta_{\text{ef}} - \rho_0}. $$
+
+Získáme tak finální tvar:
+
+\begin{equation}
+  \boxed{
+  \dfrac{N(t)}{N_0} = \dfrac{\beta_{\text{ef}}}{\beta_{\text{ef}} - \rho_0} \exp{\left ( \dfrac{\rho_0 \bar{\lambda}}{\beta_{\text{ef}} - \rho_0}t \right ) } - \dfrac{\rho_0}{\beta_{\text{ef}} - \rho_0} \exp{\left ( -\dfrac{\beta_{\text{ef}} - \rho_0}{\Lambda}t \right )}.
+  \label{prechodova_charakteristika_priklad}}
+\end{equation}
+
+Pro ujasnění a okomentování výsledku. První člen vyjadřuje asymptotické chování křivky, tudíž popisuje zpožděné neutrony. Druhý člen je nejintenzivnější hned z kraje intervalu a postupně vymizí, proto popisuje okamžité neutrony.\\
+
+Pro popis je dále důležitý člen $\dfrac{\beta_{\text{ef}}}{\beta_{\text{ef}} - \rho_0}$, který vyjadřuje hodnotu relativní četnosti neutronů, která nastane při okamžitém nárůstu výkonu.\\
+
+\normalsize
+
+\textbf{c) Periodické chování}

@@ -4,5 +4,11 @@
 \contentsline {subsection}{\numberline {0.1}Laplaceova transformace}{4}{}%
 \contentsline {section}{\numberline {1}Kinetika a dynamika nulového reaktoru}{5}{}%
 \contentsline {subsection}{\numberline {1.1}Rovnice kinetiky reaktoru}{5}{}%
-\contentsline {subsubsection}{\numberline {1.1.1}Odvození rovnic jednobodové kinetiky}{5}{}%
-\contentsline {subsubsection}{\numberline {1.1.2}Řešení rovnic jednobodové kinetiky}{13}{}%
+\contentsline {subsection}{\numberline {1.2}Odvození rovnic jednobodové kinetiky}{5}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Odvození bez vlivu zpožděných neutronů}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Odvození s vlivem zpožděných neutronů}{10}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Přehled vzorečků}{13}{}%
+\contentsline {subsection}{\numberline {1.3}Řešení rovnic jednobodové kinetiky}{13}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Řešení bez vlivu zpožděných neutronů}{13}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Řešení s vlivem zpožděných neutronů}{14}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}Analytické řešení s vlivem zpožděných neutronů}{18}{}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  1 MAR 2023 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  13 MAR 2023 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -973,61 +973,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 [9]
-<img/1.png, id=47, 732.336pt x 490.2315pt>
+<img/1.png, id=51, 732.336pt x 490.2315pt>
 File: img/1.png Graphic file (type png)
 <use img/1.png>
-Package pdftex.def Info: img/1.png  used on input line 271.
+Package pdftex.def Info: img/1.png  used on input line 276.
 (pdftex.def)             Requested size: 364.19664pt x 243.7986pt.
  [10]
-Overfull \hbox (9.14355pt too wide) in paragraph at lines 276--277
+Overfull \hbox (9.14355pt too wide) in paragraph at lines 281--282
 \OT1/cmr/m/n/10.95 8 skupin, ENDF/B 6 skupin) po-dle polo^^Tcasu roz-padu. Pro 
 popis se zav^^Sad^^S^^P tzv. \OT1/cmr/bx/n/10.95 pod^^S^^Pl zpo^^Tzd^^Ten^^Sych
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
 
  []
 
 [11 <./img/1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
 
-Overfull \hbox (0.23601pt too wide) in paragraph at lines 341--342
+Overfull \hbox (0.23601pt too wide) in paragraph at lines 350--351
 []\OT1/cmr/m/n/10.95 Nyn^^S^^P si je^^Tst^^Te uka^^Tzme rovnice jed-no-bodov^^S
 e kinetiky se zpo^^Tzd^^Ten^^Symi neu-trony. Odvozen^^S^^P je podobn^^Se
  []
 
 [12]
-Overfull \hbox (3.10757pt too wide) in paragraph at lines 377--388
+Overfull \hbox (3.10757pt too wide) in paragraph at lines 386--397
  [][] 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+
+ []
+
 [13]
-Overfull \hbox (6.9284pt too wide) in paragraph at lines 414--415
+Overfull \hbox (6.9284pt too wide) in paragraph at lines 427--428
 []\OT1/cmr/m/n/10.95 s po^^Tc^^Sate^^Tcn^^S^^Pmi podm^^S^^Pnkami (ust^^Salen^^S
 y stav) $\OML/cmm/m/it/10.95 N\OT1/cmr/m/n/10.95 (0) = \OML/cmm/m/it/10.95 N[]$
  \OT1/cmr/m/n/10.95 a $\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (0) = \OML/cmm
@@ -1035,18 +1040,54 @@ y stav) $\OML/cmm/m/it/10.95 N\OT1/cmr/m/n/10.95 (0) = \OML/cmm/m/it/10.95 N[]$
  []
 
 [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
 
  []
 
-[16] [17]) [18] (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_0.aux)
+[16] [17] [18]
+<img/impulsni.jpg, id=80, 433.62pt x 440.847pt>
+File: img/impulsni.jpg Graphic file (type jpg)
+<use img/impulsni.jpg>
+Package pdftex.def Info: img/impulsni.jpg  used on input line 620.
+(pdftex.def)             Requested size: 273.14922pt x 277.71489pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--626
+
+ []
+
+[19 <./img/impulsni.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+
+ []
+
+<img/prechodova.jpg, id=85, 666.69075pt x 377.0085pt>
+File: img/prechodova.jpg Graphic file (type jpg)
+<use img/prechodova.jpg>
+Package pdftex.def Info: img/prechodova.jpg  used on input line 674.
+(pdftex.def)             Requested size: 273.14922pt x 154.45943pt.
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+
+ []
+
+[21 <./img/prechodova.JPG>] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 770--771
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
+
+ []
+
+) [23] (./main.aux (./veličiny.aux) (./zkratky.aux) (./chapter_0.aux)
 (./chapter_1.aux)) ) 
 Here is how much of TeX's memory you used:
- 28778 strings out of 475075
- 756405 string characters out of 5783001
- 1218007 words of memory out of 5000000
- 49729 multiletter control sequences out of 15000+600000
- 477051 words of font info for 55 fonts, out of 8000000 for 9000
+ 28802 strings out of 475075
+ 756899 string characters out of 5783001
+ 1217007 words of memory out of 5000000
+ 49749 multiletter control sequences out of 15000+600000
+ 477386 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,103p,718b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
@@ -1055,17 +1096,21 @@ b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texli
-ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/
-fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (18 pages, 228636 bytes).
+ype1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+<c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (23 pages, 380688 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 176 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
